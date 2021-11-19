@@ -10,7 +10,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\KonsolenExtrasBibliothek\KonsolenExtrasBibliothek.csproj" />
-    <ProjectReference Include="..\MAFragBFTKlassenBibliothek\MAFragBFTKlassenBibliothek.csproj" />
   </ItemGroup>
 
 </Project>
