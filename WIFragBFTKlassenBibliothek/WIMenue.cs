@@ -1,85 +1,86 @@
 ﻿using System;
 using Figgle;
 
-
-namespace FragBFTKlassenBibliothek
+namespace WIFragBFTKlassenBibliothek
 {
-    public class Hauptmenue
+    public class WIMenue
     {
-        public static void HauptmenueAufruf()
+        public static void WISubMenue()
         {
 
 
+            string HauptAusw;
+
+
+            bool Hmenue;
+
             do
             {
-
                 (int, int) cPosBM = Console.GetCursorPosition();
 
                 Console.WriteLine();
 
                 //ASCII art Logo wird erzeugt.
                 Console.WriteLine
-                    (FiggleFonts.Slant.Render("FragBFT12"));
+                    (FiggleFonts.Slant.Render("FragBFT"));
 
                 //Konsolentitel wird geändert.
-                Console.Title = "FragBFT12";
+                Console.Title = "FragBFT";
 
                 Console.WriteLine("------------------------------------------------------------------------------------\n" +
-                                  "                              >>> Hauptmenü <<<\n" +
+                                  "                              >>> Bereich Submenü <<<\n" +
                                   "------------------------------------------------------------------------------------\n\n");
 
-                Console.WriteLine("Eingabe: exit\t->\tbeendet das Programm");
+                Console.WriteLine("Eingabe: exit\t\t->\tbeendet das Programm");
+                Console.WriteLine("Eingabe: hauptmenü\t->\tzurück zum Hauptmenü");
 
                 //Beschreibung der Software.
-                Console.WriteLine("\n\nMit der Software 'FragBFT12' sollen wiederkehrende oder besonders aufwendige\n" +
-                                  "Aufgabenaus dem schulischen Kontext erleichtert oder gelöst werden. Diese Aufgaben\n" +
-                                  "ergeben sich aus den Problemstellungen aus dem Unterricht der Berufsfachschule für Technik.\n\n");
+                Console.WriteLine("\n\nBeschreibung Bereich \n\n");
 
-                string HauptAusw;
-
-
-
+                Hmenue = false;
 
                 //Eingabeaufforderung 
                 Console.WriteLine("Wählen Sie eine der folgenden Themenbereiche:\n");
-                Console.WriteLine("\te - Elektrotechnik");
-                Console.WriteLine("\ti - Informatik");
-                Console.WriteLine("\tm - Mathematik");
-                Console.WriteLine("\tp - Physik");
-                Console.WriteLine("\tw - Wirtschaft\n");
+                Console.WriteLine("\t1 - Feature10");
+                Console.WriteLine("\t2 - Feature11");
+                Console.WriteLine("\t3 - Feature12");
+                Console.WriteLine("\t3 - Feature13");
+                Console.WriteLine("\t4 - Feature14\n");
                 Console.Write("Eingabe:");
-                HauptAusw = Console.ReadLine().ToLower();
+                HauptAusw = Console.ReadLine();
 
                 switch (HauptAusw)
                 {
-                    case "e":
+
+                    case "1":
                         Console.Clear();
-                        //ETFragBFTKlassenBibliothek.ETMenue.ETSubMenue();
+                        Feature10.Feature10Funcion1();
+
                         break;
 
-                    case "i":
+                    case "2":
                         Console.Clear();
-                        //ITMultiToolKlassenBibliothek.ITMenue.ITSubMenue();
+
                         break;
 
-                    case "m":
+                    case "3":
                         Console.Clear();
-                        //MAMultiToolKlassenBibliothek.MAMenue.MASubMenue();
+
                         break;
 
-                    case "p":
+                    case "4":
                         Console.Clear();
-                        //PYFragBFTKlassenBibliothek.PyMenue.PYSubMenue();
+
                         break;
 
-                    case "w":
+                    case "hauptmenü":
                         Console.Clear();
-                        WIFragBFTKlassenBibliothek.WIMenue.WISubMenue();
+                        Hmenue = true;
                         break;
-
                     case "exit":
                         Environment.Exit(0);
                         break;
+
                     default:
 
                         Console.WriteLine("Ungültige Eingabe");
@@ -87,15 +88,14 @@ namespace FragBFTKlassenBibliothek
 
                         (int, int) cPosAM = Console.GetCursorPosition();
 
+
                         KonsolenExtrasBibliothek.ConsoleExtras.ClearCurrentConsoleLine(cPosBM.Item2, cPosAM.Item2);
 
                         break;
                 }
 
-            } while (true);
 
-
-
+            } while (!Hmenue);
         }
     }
 }

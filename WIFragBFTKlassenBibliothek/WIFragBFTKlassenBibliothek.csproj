@@ -10,7 +10,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\KonsolenExtrasBibliothek\KonsolenExtrasBibliothek.csproj" />
-    <ProjectReference Include="..\WIFragBFTKlassenBibliothek\WIFragBFTKlassenBibliothek.csproj" />
   </ItemGroup>
 
 </Project>
