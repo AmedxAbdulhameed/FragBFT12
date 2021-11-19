@@ -10,7 +10,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\KonsolenExtrasBibliothek\KonsolenExtrasBibliothek.csproj" />
-    <ProjectReference Include="..\PYFragBFTKlassenBibliothek\PYFragBFTKlassenBibliothek.csproj" />
   </ItemGroup>
 
 </Project>
