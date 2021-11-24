@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace ITFragBFTKlassenBibliothek
 {
-    class Feature19
+    class Feature17
     {
-        internal static void Feature19Funcion1()
-        {
-            Console.WriteLine("Feature19");
-        }
+
     }
 }

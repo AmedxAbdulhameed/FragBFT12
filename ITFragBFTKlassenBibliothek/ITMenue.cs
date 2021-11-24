@@ -1,6 +1,7 @@
 ﻿using System;
 using Figgle;
 
+
 namespace ITFragBFTKlassenBibliothek
 {
     public class ITMenue
@@ -46,15 +47,26 @@ namespace ITFragBFTKlassenBibliothek
                 Console.WriteLine("\t3 - Feature17");
                 Console.WriteLine("\t4 - Feature18\n");
                 Console.Write("Eingabe:");
-                HauptAusw = Console.ReadLine();
+                HauptAusw = Console.ReadLine().ToLower();
 
                 switch (HauptAusw)
                 {
 
                     case "1":
                         Console.Clear();
-                        Feature19.Feature19Funcion1();
-
+                        
+                        /*
+                            call static klasse feature 1...
+                            do something with the class 
+                            code: 
+                            Console.WriteLine("aufforderung etwas einzugeben");
+                            string input = Console.ReadLine();
+                            feature1();
+                            feature.something();
+                            Console.WriteLine(feature.somethingElse);
+                            
+                         */
+                        
                         break;
 
                     case "2":
