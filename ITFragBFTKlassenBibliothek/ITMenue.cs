@@ -36,7 +36,7 @@ namespace ITFragBFTKlassenBibliothek
                 Console.WriteLine("Eingabe: hauptmenü\t->\tzurück zum Hauptmenü");
 
                 //Beschreibung der Software.
-                Console.WriteLine("\n\nBeschreibung Bereich \n\n");
+                Console.WriteLine("\n\nHier können Sachen die für Informatiker relevat sind berechnet werden\n\n"); // mach ich später xD
 
                 Hmenue = false;
 

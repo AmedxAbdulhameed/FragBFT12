@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Figgle;
 
 namespace ITFragBFTKlassenBibliothek
 {
@@ -19,9 +20,40 @@ namespace ITFragBFTKlassenBibliothek
     {
         internal static void FeatureMenue()
         {
+            (int, int) cPosBM = Console.GetCursorPosition();
 
+            Console.WriteLine();
+
+            //ASCII art Logo wird erzeugt.
+            Console.WriteLine
+                (FiggleFonts.Slant.Render("FragBFT"));
+
+            Console.WriteLine("------------------------------------------------------------------------------------\n" +
+                              "                          >>> Bereich Nullstellen berechnen <<<\n" +
+                              "------------------------------------------------------------------------------------\n\n");
+        redo:
+            Console.WriteLine("Eingabe: hauptmenü\t->\tzurück zum Hauptmenü");
+            Console.WriteLine("Eingabe: PQ\t->\tum nullstellen mit der p/q formel zu umzurechnen");
+            string menueAuswahl = Console.ReadLine().ToLower();
+            if (menueAuswahl == "pq")
+            {
+                Feature12Funcion1();
+            }
+            /*else if (menueAuswahl == "something else") //comming soon!
+              {
+                  Feature11Funcion2();
+              }*/
+            else if (menueAuswahl == "hauptmenü")
+            {
+                Console.Clear();
+            }
+            else
+            {
+                Console.WriteLine("falsche eingabe!\n\n");
+                goto redo;
+            }
         }
-        internal void Feature12Funcion1()
+        internal static void Feature12Funcion1()
         {
             Console.WriteLine("Feature");
         }

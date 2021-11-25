@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Figgle;
 
 namespace ITFragBFTKlassenBibliothek
 {
@@ -19,11 +20,49 @@ namespace ITFragBFTKlassenBibliothek
     {
         internal static void FeatureMenue()
         {
+            (int, int) cPosBM = Console.GetCursorPosition();
 
+            Console.WriteLine();
+
+            //ASCII art Logo wird erzeugt.
+            Console.WriteLine
+                (FiggleFonts.Slant.Render("FragBFT"));
+
+            Console.WriteLine("------------------------------------------------------------------------------------\n" +
+                              "                          >>> Bereich Bits und Byte Rechner <<<\n" +
+                              "------------------------------------------------------------------------------------\n\n");
+        redo:
+            Console.WriteLine("Eingabe: hauptmenü\t->\tzurück zum Hauptmenü");
+            Console.WriteLine("Eingabe: zu Byte\t->\tum von Bit zu Byte umzurechnen");
+            Console.WriteLine("Eingabe: zu bit\t->\tum von Byte zu Bit umzurechnen");
+            string menueAuswahl = Console.ReadLine().ToLower();
+            if (menueAuswahl == "zu byte")
+            {
+                Feature13Funcion1();
+            }
+            else if (menueAuswahl == "zu bit") 
+            {
+                Feature13Funcion2();
+            }
+            else if (menueAuswahl == "hauptmenü")
+            {
+                Console.Clear();
+            }
+            else
+            {
+                Console.WriteLine("falsche eingabe!\n\n");
+                goto redo;
+            }
         }
-        internal void Feature13Funcion1()
+        static internal void Feature13Funcion1()
         {
-            Console.WriteLine("Feature");
+            //bits zu bytes
+            Console.WriteLine("Feature1");
+        }
+        static internal void Feature13Funcion2()
+        {
+            //bytes zu bits
+            Console.WriteLine("Feature2");
         }
     }
 }
