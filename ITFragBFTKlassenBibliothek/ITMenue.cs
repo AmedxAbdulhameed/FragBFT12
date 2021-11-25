@@ -42,10 +42,10 @@ namespace ITFragBFTKlassenBibliothek
 
                 //Eingabeaufforderung 
                 Console.WriteLine("Wählen Sie eine der folgenden Themenbereiche:\n");
-                Console.WriteLine("\t1 - Feature15");
-                Console.WriteLine("\t2 - Feature16");
-                Console.WriteLine("\t3 - Feature17");
-                Console.WriteLine("\t4 - Feature18\n");
+                Console.WriteLine("\t1 - Binär zu Dezimal");
+                Console.WriteLine("\t2 - Nullstellen-Rechner");
+                Console.WriteLine("\t3 - Bits und Byte Rechner");
+                Console.WriteLine("\t4 - Vektoren-Rechner\n");
                 Console.Write("Eingabe:");
                 HauptAusw = Console.ReadLine().ToLower();
 
@@ -54,34 +54,22 @@ namespace ITFragBFTKlassenBibliothek
 
                     case "1":
                         Console.Clear();
-                        
-                        /*
-                            call static klasse feature 1...
-                            do something with the class 
-                            code: 
-                            Console.WriteLine("aufforderung etwas einzugeben");
-                            string input = Console.ReadLine();
-                            feature1();
-                            feature.something();
-                            Console.WriteLine(feature.somethingElse);
-                            
-                         */
-                        
+                        Feature11.FeatureMenue();
                         break;
 
                     case "2":
                         Console.Clear();
-
+                        Feature12.FeatureMenue();
                         break;
 
                     case "3":
                         Console.Clear();
-
+                        Feature13.FeatureMenue();
                         break;
 
                     case "4":
                         Console.Clear();
-
+                        Feature14.FeatureMenue();
                         break;
 
                     case "hauptmenü":
