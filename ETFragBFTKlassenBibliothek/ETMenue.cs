@@ -36,16 +36,19 @@ namespace ETFragBFTKlassenBibliothek
                 Console.WriteLine("Eingabe: hauptmenü\t->\tzurück zum Hauptmenü");
 
                 //Beschreibung der Software.
-                Console.WriteLine("\n\nBeschreibung Bereich \n\n");
-
+                Console.WriteLine("\n\nMit diesem Programm können sie Verschiede Bereiche der Elektrotechnik Berechnen\n");
+                Console.WriteLine("- Elektrotechnische Grundlagen");
+                Console.WriteLine("- Berechnung der Bauelemente(Eingabe oder Auswahl der Parameter)");
+                Console.WriteLine("- Leitungsberechnung\n");
+              
                 Hmenue = false;
 
                 //Eingabeaufforderung 
                 Console.WriteLine("Wählen Sie eine der folgenden Themenbereiche:\n");
-                Console.WriteLine("\t1 - Feature1");
-                Console.WriteLine("\t2 - Feature2");
-                Console.WriteLine("\t3 - Feature3");
-                Console.WriteLine("\t4 - Feature4\n");
+                Console.WriteLine("\t1 - Bruttorechner");
+                Console.WriteLine("\t2 - Ohmisches Gesetz");
+                Console.WriteLine("\t3 - Berechnung von Wiederstand");
+                Console.WriteLine("\t4 - Spannungsfall\n");
                 Console.Write("Eingabe:");
                 HauptAusw = Console.ReadLine();
 
@@ -55,21 +58,24 @@ namespace ETFragBFTKlassenBibliothek
                     case "1":
                         Console.Clear();
                         Feature1.Feature1Funcion1();
-
+                        
                         break;
 
                     case "2":
                         Console.Clear();
+                        Feature2.Feature2Funcion2();
 
                         break;
 
                     case "3":
                         Console.Clear();
+                        Feature3.Feature3Funcion3();
 
                         break;
 
                     case "4":
                         Console.Clear();
+                        Feature4.Feature4Funcion4();
 
                         break;
 
