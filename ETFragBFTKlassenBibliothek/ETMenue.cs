@@ -43,7 +43,7 @@ namespace ETFragBFTKlassenBibliothek
               
                 Hmenue = false;
 
-                //Eingabeaufforderung 
+                //Eingabeaufforderung.
                 Console.WriteLine("Wählen Sie eine der folgenden Themenbereiche:\n");
                 Console.WriteLine("\t1 - Bruttorechner");
                 Console.WriteLine("\t2 - Ohmisches Gesetz");

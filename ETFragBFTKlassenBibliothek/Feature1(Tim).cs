@@ -3,20 +3,24 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using Figgle;
 namespace ETFragBFTKlassenBibliothek
 {
     public class Feature1
     {
         public static void Feature1Funcion1()
+        
         {
+            
 
-            {
+            {      Console.WriteLine
+                   (FiggleFonts.Slant.Render("BFTMultiTool"));
+
 
                 Console.WriteLine("------------------------------------------------------------------------------------\n" +
                                   "                              >>> Bruttorechner <<<\n" +
                                   "------------------------------------------------------------------------------------\n\n");
-
+                
                 double a; // Nettobetrag
 
                 const double b = 1.07; // MwSt 7%(1.07) wenn man die MwSt dazurechnen will
