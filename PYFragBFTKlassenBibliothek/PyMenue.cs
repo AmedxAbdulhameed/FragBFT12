@@ -70,7 +70,7 @@ namespace PYFragBFTKlassenBibliothek
 
                     case "4":
                         Console.Clear();
-
+                        feature7.Feature7Funcion1();
                         break;
 
                     case "hauptmenü":
