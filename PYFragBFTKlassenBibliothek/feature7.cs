@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PYFragBFTKlassenBibliothek
 {
-    class Class4
+    class feature7
     {
     }
 }
