@@ -8,5 +8,6 @@ namespace PYFragBFTKlassenBibliothek
 {
     class Class2
     {
+       
     }
 }
