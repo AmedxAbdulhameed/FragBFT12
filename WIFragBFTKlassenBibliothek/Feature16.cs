@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace WIFragBFTKlassenBibliothek
 {
-    class Feature10
+    class Feature16
     {
-        internal static void Feature10Funcion1()
+        internal static void Feature16Funcion1()
         {
-            Console.WriteLine("Feature10");
+            Console.WriteLine("Feature16");
         }
     }
 }

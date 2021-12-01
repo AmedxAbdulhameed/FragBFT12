@@ -41,11 +41,11 @@ namespace WIFragBFTKlassenBibliothek
 
                 //Eingabeaufforderung 
                 Console.WriteLine("Wählen Sie eine der folgenden Themenbereiche:\n");
-                Console.WriteLine("\t1 - Feature10");
-                Console.WriteLine("\t2 - Feature11");
-                Console.WriteLine("\t3 - Feature12");
-                Console.WriteLine("\t3 - Feature13");
-                Console.WriteLine("\t4 - Feature14\n");
+                Console.WriteLine("\t1 - Feature15");
+                Console.WriteLine("\t2 - Lohnsteuerrechner");
+                Console.WriteLine("\t3 - Selbständigrechner");
+                Console.WriteLine("\t4 - Zinsrechner");
+                Console.WriteLine("\t5 - Inmobilienrechner\n");
                 Console.Write("Eingabe:");
                 HauptAusw = Console.ReadLine();
 
@@ -54,7 +54,7 @@ namespace WIFragBFTKlassenBibliothek
 
                     case "1":
                         Console.Clear();
-                        Feature10.Feature10Funcion1();
+                        Feature15.Feature15Funcion1();
 
                         break;
 
@@ -69,6 +69,12 @@ namespace WIFragBFTKlassenBibliothek
                         break;
 
                     case "4":
+                        Console.Clear();
+
+                        break;
+
+                    case "5":
+
                         Console.Clear();
 
                         break;
