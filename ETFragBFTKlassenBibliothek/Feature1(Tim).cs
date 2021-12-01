@@ -9,38 +9,62 @@ namespace ETFragBFTKlassenBibliothek
     public class Feature1
     {
         public static void Feature1Funcion1()
-        
-        {
-            
 
-            {      Console.WriteLine
-                   (FiggleFonts.Slant.Render("BFTMultiTool"));
+        {
+
+
+            {
+                Console.WriteLine
+                (FiggleFonts.Slant.Render("BFTMultiTool"));
 
 
                 Console.WriteLine("------------------------------------------------------------------------------------\n" +
-                                  "                              >>> Bruttorechner <<<\n" +
+                                  "                              >>> Leistungsrechner <<<\n" +
                                   "------------------------------------------------------------------------------------\n\n");
+
                 
-                double a; // Nettobetrag
+                Console.WriteLine("Mein Leistungsrechner");
+                Console.WriteLine("-------------------\n");
+               
+                Console.WriteLine("Geben sie hier eine Zahl U für die elektrische spannung ein");
+                Double zahl1 = Convert.ToDouble(Console.ReadLine());
 
-                const double b = 1.07; // MwSt 7%(1.07) wenn man die MwSt dazurechnen will
+                Console.WriteLine("Geben sie Hier eine Zweite Zahl I für den elektrischen strom ein");
+                Double zahl2 = Convert.ToDouble(Console.ReadLine());
+                Double ergebnis = 0;
+     
 
-                const double c = 1.19; // MwSt 19%(1.19) wenn man die MwSt dazurechen will
+                ergebnis  = zahl1 * zahl2;
+    
+                Console.WriteLine($"das ergebnis P für Leistung ist: {ergebnis}");
+                Console.Read();
+                 
+                
 
-                Console.Write("Nettobetrag in Euro : ");
- 
-                a = Convert.ToDouble(Console.ReadLine());
 
-                Console.Write("Brutto mit 7% MwSt : {0}\n", a * b);
 
-                Console.Write("Brutto mit 19% MwSt : {0}", a * c);
 
-                Console.ReadLine();
+
+
+
+
+
+
+
+
+
+
+
+
+
                 Console.Clear();
-               
+
+                
+
+
             }
-               
-           
+
+
 
 
         }

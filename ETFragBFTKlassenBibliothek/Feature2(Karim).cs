@@ -23,36 +23,34 @@ namespace ETFragBFTKlassenBibliothek
             Console.WriteLine("\t4 - Spannungsfall\n");
             Console.Write("Eingabe:");
             Ausw = Console.ReadLine();
-
+           
             switch (Ausw)
             {
 
                 case "1":
                     Console.Clear();
-                    Feature1.Feature1Funcion1();
-
+      
                     break;
 
                 case "2":
                     Console.Clear();
-                    Feature2.Feature2Funcion2();
+                    
 
                     break;
 
                 case "3":
                     Console.Clear();
-                    Feature3.Feature3Funcion3();
+                    
 
                     break;
 
                 case "4":
                     Console.Clear();
-                    Feature4.Feature4Funcion4();
+                    
 
                     break;
-                   
-                  
 
+               
 
 
 
