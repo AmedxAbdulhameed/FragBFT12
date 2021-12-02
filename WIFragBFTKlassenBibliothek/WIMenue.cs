@@ -35,7 +35,7 @@ namespace WIFragBFTKlassenBibliothek
                 Console.WriteLine("Eingabe: hauptmenü\t->\tzurück zum Hauptmenü");
 
                 //Beschreibung der Software.
-                Console.WriteLine("\n\nIm Wirt \n\n");
+                Console.WriteLine("\n\n Im Wirtschaftsrechner können sie alles in Bezug auf Wirtschaft berechnen  \n\n");
 
                 Hmenue = false;
 
