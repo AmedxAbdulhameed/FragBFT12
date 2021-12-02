@@ -27,7 +27,7 @@ namespace ETFragBFTKlassenBibliothek
 
                 case "1":
                     Console.Clear();
-
+                    //ich bin der beste
                     break;
 
                 case "2":
