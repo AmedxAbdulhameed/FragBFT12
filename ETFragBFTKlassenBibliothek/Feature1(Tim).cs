@@ -86,10 +86,7 @@ namespace ETFragBFTKlassenBibliothek
                     Console.Clear();
                 }
                
-                else
-                {
-                    /* Eingabefehler */
-                }
+               
 
 
                 Console.Clear();
