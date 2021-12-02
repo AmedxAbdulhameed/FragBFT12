@@ -28,14 +28,14 @@ namespace WIFragBFTKlassenBibliothek
                 Console.Title = "FragBFT";
 
                 Console.WriteLine("------------------------------------------------------------------------------------\n" +
-                                  "                              >>> Bereich Submenü <<<\n" +
+                                  "                              >>> Wirtschaft Submenü <<<\n" +
                                   "------------------------------------------------------------------------------------\n\n");
 
                 Console.WriteLine("Eingabe: exit\t\t->\tbeendet das Programm");
                 Console.WriteLine("Eingabe: hauptmenü\t->\tzurück zum Hauptmenü");
 
                 //Beschreibung der Software.
-                Console.WriteLine("\n\nBeschreibung Bereich \n\n");
+                Console.WriteLine("\n\nIm Wirt \n\n");
 
                 Hmenue = false;
 
@@ -60,23 +60,23 @@ namespace WIFragBFTKlassenBibliothek
 
                     case "2":
                         Console.Clear();
-
+                        Feature16.Feature16Funcion1();
                         break;
 
                     case "3":
                         Console.Clear();
-
+                        Feature17.Feature17Funcion1();
                         break;
 
                     case "4":
                         Console.Clear();
-
+                        Feature18.Feature18Funcion1();
                         break;
 
                     case "5":
 
                         Console.Clear();
-
+                        Feature19.Feature19Funcion1();
                         break;
 
                     case "hauptmenü":
