@@ -46,6 +46,7 @@ namespace ITFragBFTKlassenBibliothek
                 Console.WriteLine("\t2 - Nullstellen-Rechner");
                 Console.WriteLine("\t3 - Bits und Byte Rechner");
                 Console.WriteLine("\t4 - Vektoren-Rechner\n");
+                Console.WriteLine("\t5 - Newton's methode");
                 Console.Write("Eingabe:");
                 HauptAusw = Console.ReadLine().ToLower();
 
@@ -70,6 +71,11 @@ namespace ITFragBFTKlassenBibliothek
                     case "4":
                         Console.Clear();
                         Feature14.FeatureMenue();
+                        break;
+
+                    case "5":
+                        Console.Clear();
+                        Feature10.FeatureMenue();
                         break;
 
                     case "hauptmenü":
