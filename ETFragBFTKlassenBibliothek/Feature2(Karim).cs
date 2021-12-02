@@ -38,7 +38,7 @@ namespace ETFragBFTKlassenBibliothek
                     double Stromstärke = Convert.ToDouble(Console.ReadLine());
 
                     double ergebnis = (Spannung / Stromstärke);
-                    Console.WriteLine("Der Widerstand beträgt {0}.", ergebnis);
+                    Console.WriteLine("Der Widerstand beträgt {0:F2}.", ergebnis);
 
                     Console.Read();
                     Console.Clear(); 
@@ -58,7 +58,7 @@ namespace ETFragBFTKlassenBibliothek
 
 
                     double ergebnis2 = (Widerstand2 * Stromstärke2);
-                    Console.WriteLine("Die Spannung beträgt {0}", ergebnis2);
+                    Console.WriteLine("Die Spannung beträgt {0:F2}", ergebnis2);
 
                     Console.Read();
                     Console.Clear();
@@ -77,7 +77,7 @@ namespace ETFragBFTKlassenBibliothek
                     double Spannung3 = Convert.ToDouble(Console.ReadLine());
                     double ergebnis3 = (Spannung3 / Widerstand3);
 
-                    Console.WriteLine("Die Stromstärke beträgt {0}", ergebnis3);
+                    Console.WriteLine("Die Stromstärke beträgt {0:F2}", ergebnis3);
 
                     Console.Read();
                     Console.Clear();
