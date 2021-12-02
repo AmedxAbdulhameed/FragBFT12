@@ -16,16 +16,16 @@ namespace ETFragBFTKlassenBibliothek
 
             Console.WriteLine("Bitte geben Sie die Werte für die Formel(keine anderen eingaben möglivh oder Formeln )");
 
-            Console.WriteLine("Bitte geben Sie I ein");
+            Console.WriteLine("Bitte geben Sie I = Stromkreis in A  ein");
             double zahl1 = Convert.ToDouble(Console.ReadLine());
 
-            Console.WriteLine("Bitte geben Sie l ein");
+            Console.WriteLine("Bitte geben Sie l= Leistungslänge in m ein");
             double zahl2 = Convert.ToDouble(Console.ReadLine());
 
-            Console.WriteLine("Bitte geben Sie y ein");
+            Console.WriteLine("Bitte geben Sie y = spezifischer elektischer Leitwert des Leiters in m/mm^2* ohm ein");
             double zahl3 = Convert.ToDouble(Console.ReadLine());
 
-            Console.WriteLine("Bitte geben Sie A ein");
+            Console.WriteLine("Bitte geben Sie A = Ampere ein");
             double zahl4 = Convert.ToDouble(Console.ReadLine());
 
             double ergebnis= 0;
