@@ -20,7 +20,7 @@ namespace ETFragBFTKlassenBibliothek
                 Console.WriteLine("------------------------------------------------------------------------------------\n" +
                                   "                              >>> Bruttorechner <<<\n" +
                                   "------------------------------------------------------------------------------------\n\n");
-                //Hallo Tim, hier sind die Änderungen von Feature1.
+                //Test Akinci Entwicklerpush
                 double a; // Nettobetrag
 
                 const double b = 1.07; // MwSt 7%(1.07) wenn man die MwSt dazurechnen will
