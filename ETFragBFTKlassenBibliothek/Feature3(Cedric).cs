@@ -6,15 +6,14 @@ using System.Threading.Tasks;
 
 namespace ETFragBFTKlassenBibliothek
 {
-    public class Feature4
+    public class Feature3
     {
-        public static void Feature4Funcion4()
+        public static void Feature3Funcion3()
         {
             Console.WriteLine("------------------------------------------------------------------------------------\n" +
                                   "                              >>> Spannungsfall <<<\n" +
                                   "------------------------------------------------------------------------------------\n\n");
-          
-        
+            
 
 
 
@@ -25,11 +24,8 @@ namespace ETFragBFTKlassenBibliothek
 
 
 
-
-
-
+            }
 
         }
-
     }
 }

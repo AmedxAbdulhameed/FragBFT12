@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace ETFragBFTKlassenBibliothek
 {
-    public class Feature3
+    public class Feature4
     {
-        public static void Feature3Funcion3()
+        public static void Feature4Funcion4()
         {
             Console.WriteLine("------------------------------------------------------------------------------------\n" +
-                                  "                              >>> Berechnung von Wiederstand <<<\n" +
-                                  "------------------------------------------------------------------------------------\n\n");
+                                   "                              >>> Berechnung von Wiederstand <<<\n" +
+                                   "------------------------------------------------------------------------------------\n\n");
             string Ausw1;
             Console.WriteLine("Wählen Sie eine der folgenden Themenbereiche:\n");
             Console.WriteLine("\t1 - Wiederstand");
