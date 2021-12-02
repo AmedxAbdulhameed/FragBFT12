@@ -8,7 +8,7 @@ namespace ETFragBFTKlassenBibliothek
 {
     public class Feature3
     {
-        public static void Feature3Funcion3()
+        public static void Feature3Funcion3() //kommentar
         {
             Console.WriteLine("------------------------------------------------------------------------------------\n" +
                                   "                              >>> Berechnung von Wiederstand <<<\n" +
