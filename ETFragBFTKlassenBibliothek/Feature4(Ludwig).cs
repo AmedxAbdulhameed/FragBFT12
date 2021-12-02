@@ -32,19 +32,19 @@ namespace ETFragBFTKlassenBibliothek
 
                 case "2":
                     Console.Clear();
-                    Feature2.Feature2Funcion2();
+                    
 
                     break;
 
                 case "3":
                     Console.Clear();
-                    Feature3.Feature3Funcion3();
+                    
 
                     break;
 
                 case "4":
                     Console.Clear();
-                    Feature4.Feature4Funcion4();
+                   
 
                     break;
 
