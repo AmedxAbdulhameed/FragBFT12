@@ -54,7 +54,7 @@ namespace FragBFTKlassenBibliothek
                 {
                     case "e":
                         Console.Clear();
-                        ETFragBFTKlassenBibliothek.ETMenue.ETSubMenue();
+                        //ETFragBFTKlassenBibliothek.ETMenue.ETSubMenue();
                         break;
 
                     case "i":
