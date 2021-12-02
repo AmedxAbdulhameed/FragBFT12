@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PYFragBFTKlassenBibliothek
 {
-    class Class1
+    class Feature6
     {
         internal static void Feature6Funcion1()
         {

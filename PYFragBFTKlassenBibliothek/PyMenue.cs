@@ -54,7 +54,7 @@ namespace PYFragBFTKlassenBibliothek
 
                     case "1":
                         Console.Clear();
-                        Feature5.Feature5Funcion1();
+                        Feature6.Feature6Funcion1();
 
                         break;
 
