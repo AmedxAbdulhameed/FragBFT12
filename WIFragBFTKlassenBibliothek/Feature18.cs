@@ -11,8 +11,8 @@ namespace WIFragBFTKlassenBibliothek
         internal static void Feature18Funcion1()
         { 
            double Kapital;
-            double Zinssatz pro Jahr;
-            int Anlagedauer;
+           double Zinssatz_pro_jarh;
+           double Anlagedauer;
 
 
             Console.WriteLine("Feature18");
