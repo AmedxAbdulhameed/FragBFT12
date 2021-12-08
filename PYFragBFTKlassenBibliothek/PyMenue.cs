@@ -54,23 +54,23 @@ namespace PYFragBFTKlassenBibliothek
 
                     case "1":
                         Console.Clear();
-                        Feature5.Feature5Funcion1();
+                        Class1.Feature6Funcion1();
 
                         break;
 
                     case "2":
                         Console.Clear();
-
+                        Class2.Feature9Funcion1();
                         break;
 
                     case "3":
                         Console.Clear();
-
+                        Class3.Feature8Funcion1();
                         break;
 
                     case "4":
                         Console.Clear();
-
+                        Feature7.Feature7Funcion1();
                         break;
 
                     case "hauptmenü":
