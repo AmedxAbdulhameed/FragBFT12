@@ -10,7 +10,11 @@ namespace WIFragBFTKlassenBibliothek
     {
         internal static void Feature19Funcion1()
         {
-            Console.WriteLine("Feature19");
+            Console.WriteLine("Immobilienrechner");
+
+            Convert.ToInt32
+
+
         }
     }
 }
