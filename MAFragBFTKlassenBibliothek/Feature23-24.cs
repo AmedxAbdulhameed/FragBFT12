@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace MAFragBFTKlassenBibliothek
 {
-    class Feature15
+    class Feature23_24
     {
-        internal static void Feature15Funcion1()
+        internal static void Feature23_24Funcion2()
         {
-            Console.WriteLine("Feature15");
+            Console.WriteLine("Feature23_24");
         }
     }
 }

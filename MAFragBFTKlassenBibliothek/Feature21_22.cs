@@ -1,14 +1,16 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using Figgle;
 
 namespace MAFragBFTKlassenBibliothek
 {
-    public class MAMenue
+    class Feature21_22
     {
-        public static void MASubMenue()
+        internal static void Feature21_22Funcion1()
         {
-
-
             string HauptAusw;
 
 
@@ -28,22 +30,22 @@ namespace MAFragBFTKlassenBibliothek
                 Console.Title = "FragBFT";
 
                 Console.WriteLine("------------------------------------------------------------------------------------\n" +
-                                  "                              >>> Bereich Submenü <<<\n" +
+                                  "                              >>> Lineare Funktionen Submenü <<<\n" +
                                   "------------------------------------------------------------------------------------\n\n");
 
                 Console.WriteLine("Eingabe: exit\t\t->\tbeendet das Programm");
-                Console.WriteLine("Eingabe: hauptmenü\t->\tzurück zum Hauptmenü");
+                Console.WriteLine("Eingabe: submenü\t->\tzurück zum Hauptmenü");
 
                 //Beschreibung der Software.
-                Console.WriteLine("\n\nMit diesem Program können Sie Flächen,Lineare und Quadratische Funktionen berechnen\n");
+                Console.WriteLine("\n\nMit diesem Program können Sie Lineare Funktionen berechnen\n");
 
                 Hmenue = false;
 
                 //Eingabeaufforderung 
                 Console.WriteLine("Wählen Sie eine der folgenden Themenbereiche:\n");
-                Console.WriteLine("\t1 - Quadratische Funnktionen");
-                Console.WriteLine("\t2 - Lineare Funktionen");
-                Console.WriteLine("\t3 - Flächenberechnung");
+                Console.WriteLine("\t1 - Wertetabell");
+                Console.WriteLine("\t2 - Nullstellen");
+
                 Console.Write("Eingabe:");
                 HauptAusw = Console.ReadLine();
 
@@ -52,22 +54,22 @@ namespace MAFragBFTKlassenBibliothek
 
                     case "1":
                         Console.Clear();
-                        Feature20.Feature20Funcion1();
+                        Wertetabelle();
 
                         break;
 
                     case "2":
                         Console.Clear();
-                        Feature21_22.Feature21_22Funcion1();
+
                         break;
 
                     case "3":
                         Console.Clear();
-                        Feature23_24.Feature23_24Funcion2();
+
                         break;
 
 
-                    case "hauptmenü":
+                    case "submenü":
                         Console.Clear();
                         Hmenue = true;
                         break;
@@ -90,6 +92,19 @@ namespace MAFragBFTKlassenBibliothek
 
 
             } while (!Hmenue);
+        }
+
+
+        static void Wertetabelle()
+        {
+
+
+        }
+
+        static void Nullstellen()
+        {
+
+
         }
     }
 }
