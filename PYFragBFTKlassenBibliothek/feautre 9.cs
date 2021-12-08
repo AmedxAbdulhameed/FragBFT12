@@ -8,6 +8,9 @@ namespace PYFragBFTKlassenBibliothek
 {
     class Class2
     {
-       
+      internal static void Feature9Funcion1()
+        {
+            Console.WriteLine("Feature9");
+        } 
     }
 }
