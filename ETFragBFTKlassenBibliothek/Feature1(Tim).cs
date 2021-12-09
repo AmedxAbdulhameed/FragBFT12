@@ -28,7 +28,7 @@ namespace ETFragBFTKlassenBibliothek
                    
                     Console.WriteLine("Eingabe: exit\t\t->\tbeendet das Programm");
                     Console.WriteLine("Eingabe: hauptmenü\t->\tzurück zum Hauptmenü");
-                   
+                  
                     Console.WriteLine("Mein Leistungsrechner");
                     Console.WriteLine("---------------------\n");
                     Console.WriteLine("\t1 - Elektrische Spannung * Elektrischen Strom");
@@ -37,7 +37,7 @@ namespace ETFragBFTKlassenBibliothek
                     Console.WriteLine("Wählen sie eine rechnung aus");
                     string rechnung = Console.ReadLine();
 
-
+                 
 
 
                     if (rechnung == "1")
@@ -50,8 +50,7 @@ namespace ETFragBFTKlassenBibliothek
 
                             Console.WriteLine("Geben sie Hier eine Zweite Zahl I für den elektrischen strom ein");
                             Double zahl2 = Convert.ToDouble(Console.ReadLine());
-                            Double ergebnis = 0;
-
+                            Double ergebnis = 0; 
 
                             ergebnis = zahl1 * zahl2;
 
@@ -117,14 +116,22 @@ namespace ETFragBFTKlassenBibliothek
                             Console.Clear();
                         }
                     }
+                    else if (rechnung == "exit")
+                    {
+                        Environment.Exit(0);
 
-                    else if ("hauptmenü")
+                        break;
+                    }
+                    else if (rechnung == "hauptmenü")
+                    {
                         Console.Clear();
-                    
-                   
-                    
+                        ETMenue.ETSubMenue();
+                        
 
-                    
+                    }
+                    Console.Clear();
+
+
 
 
 
