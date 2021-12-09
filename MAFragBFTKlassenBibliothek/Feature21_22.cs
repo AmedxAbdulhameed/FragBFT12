@@ -45,6 +45,8 @@ namespace MAFragBFTKlassenBibliothek
                 Console.WriteLine("Wählen Sie eine der folgenden Themenbereiche:\n");
                 Console.WriteLine("\t1 - Wertetabell");
                 Console.WriteLine("\t2 - Nullstellen");
+                Console.WriteLine("\t2 - Funktion_Ausgeben");
+
 
                 Console.Write("Eingabe:");
                 HauptAusw = Console.ReadLine();
@@ -60,11 +62,14 @@ namespace MAFragBFTKlassenBibliothek
 
                     case "2":
                         Console.Clear();
+                        Nullstellen();
 
                         break;
 
                     case "3":
                         Console.Clear();
+                        Funktion_Ausgeben();
+
 
                         break;
 
@@ -102,6 +107,11 @@ namespace MAFragBFTKlassenBibliothek
         }
 
         static void Nullstellen()
+        {
+
+
+        }
+        static void Funktion_Ausgeben()
         {
 
 

@@ -32,22 +32,23 @@ namespace MAFragBFTKlassenBibliothek
                 Console.Title = "FragBFT";
 
                 Console.WriteLine("------------------------------------------------------------------------------------\n" +
-                                  "                              >>> Bereich Submenü <<<\n" +
+                                  "                              >>> Flächenberechnung Submenü <<<\n" +
                                   "------------------------------------------------------------------------------------\n\n");
 
                 Console.WriteLine("Eingabe: exit\t\t->\tbeendet das Programm");
-                Console.WriteLine("Eingabe: hauptmenü\t->\tzurück zum Hauptmenü");
+                Console.WriteLine("Eingabe: submenü\t->\tzurück zum Hauptmenü");
 
                 //Beschreibung der Software.
-                Console.WriteLine("\n\nMit diesem Program können Sie Flächen,Lineare und Quadratische Funktionen berechnen\n");
+                Console.WriteLine("\n\nMit diesem Program können Sie Kreis,Parallelogramm,Rechteck und Dreieck Flächen berechnen\n");
 
                 Hmenue = false;
 
                 //Eingabeaufforderung 
-                Console.WriteLine("Wählen Sie eine der folgenden Themenbereiche:\n");
-                Console.WriteLine("\t1 - Quadratische Funnktionen");
-                Console.WriteLine("\t2 - Lineare Funktionen");
-                Console.WriteLine("\t3 - Flächenberechnung");
+                Console.WriteLine("Wählen Sie eine der folgenden Fläche:\n");
+                Console.WriteLine("\t1 - Kreis ");
+                Console.WriteLine("\t2 - Parallelogramm");
+                Console.WriteLine("\t3 - Rechteck");
+                Console.WriteLine("\t1 - Dreieck");
                 Console.Write("Eingabe:");
                 HauptAusw = Console.ReadLine();
 
@@ -56,22 +57,27 @@ namespace MAFragBFTKlassenBibliothek
 
                     case "1":
                         Console.Clear();
-                        Feature20.Feature20Funcion1();
-
+                        Kreis();
                         break;
+                        
 
                     case "2":
                         Console.Clear();
-                        Feature21_22.Feature21_22Funcion1();
+                        Parallelogramm();
                         break;
+
 
                     case "3":
                         Console.Clear();
-                        Feature23_24.Feature23_24Funcion2();
+                        Rechteck();
                         break;
 
+                    case "4":
+                        Console.Clear();
+                        Dreieck();
+                        break;
 
-                    case "hauptmenü":
+                    case "submenü":
                         Console.Clear();
                         Hmenue = true;
                         break;
@@ -94,6 +100,32 @@ namespace MAFragBFTKlassenBibliothek
 
 
             } while (!Hmenue);
+
+
+
+
+
+            static void Kreis()
+            {
+
+            }
+            static void Parallelogramm()
+            {
+
+            }
+
+            static void Rechteck()
+            {
+
+            }
+
+            static void Dreieck()
+            {
+
+            }
+
+
+
         }
     }
 }
