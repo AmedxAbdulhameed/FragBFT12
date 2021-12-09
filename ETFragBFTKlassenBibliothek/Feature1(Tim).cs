@@ -12,7 +12,6 @@ namespace ETFragBFTKlassenBibliothek
 
         {
             
-            bool Hmenue;
             
             {
 
@@ -27,7 +26,7 @@ namespace ETFragBFTKlassenBibliothek
                                       "------------------------------------------------------------------------------------\n\n");
                    
                     Console.WriteLine("Eingabe: exit\t\t->\tbeendet das Programm");
-                    Console.WriteLine("Eingabe: hauptmenü\t->\tzurück zum Hauptmenü");
+                    Console.WriteLine("Eingabe: hauptmenü\t->\tzurück zum Hauptmenü\n");
                   
                     Console.WriteLine("Mein Leistungsrechner");
                     Console.WriteLine("---------------------\n");
@@ -36,9 +35,6 @@ namespace ETFragBFTKlassenBibliothek
                     Console.WriteLine("\t3 - Elektrischen Strom / Leistung\n");
                     Console.WriteLine("Wählen sie eine rechnung aus");
                     string rechnung = Console.ReadLine();
-
-                 
-
 
                     if (rechnung == "1")
                     {
@@ -126,16 +122,8 @@ namespace ETFragBFTKlassenBibliothek
                     {
                         Console.Clear();
                         ETMenue.ETSubMenue();
-                        
-
                     }
                     Console.Clear();
-
-
-
-
-
-
                 }
 
 
