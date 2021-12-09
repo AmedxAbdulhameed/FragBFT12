@@ -34,6 +34,7 @@ namespace ETFragBFTKlassenBibliothek
                     Console.WriteLine("Gib die Spannung an.");
                     double Spannung = Convert.ToDouble(Console.ReadLine());
 
+
                     Console.WriteLine("Gib die Stromstärke an.");
                     double Stromstärke = Convert.ToDouble(Console.ReadLine());
 
@@ -85,28 +86,11 @@ namespace ETFragBFTKlassenBibliothek
 
                     break;
 
-
-                    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                                    default:
+                    Console.WriteLine("Ungültige Eingabe");
+                    Console.Read();
+                    Console.Clear();
+                    break;
 
 
 
