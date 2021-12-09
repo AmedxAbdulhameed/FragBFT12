@@ -48,7 +48,7 @@ namespace MAFragBFTKlassenBibliothek
                 Console.WriteLine("\t1 - Kreis ");
                 Console.WriteLine("\t2 - Parallelogramm");
                 Console.WriteLine("\t3 - Rechteck");
-                Console.WriteLine("\t1 - Dreieck");
+                Console.WriteLine("\t4 - Dreieck");
                 Console.Write("Eingabe:");
                 HauptAusw = Console.ReadLine();
 
@@ -117,10 +117,51 @@ namespace MAFragBFTKlassenBibliothek
             static void Rechteck()
             {
 
-            }
+                bool subexit;
+                do
+                {
+                    Console.WriteLine("Ausgabe Flächenberechnung von Rechteck");
+
+                    subexit = false;
+
+                    Console.WriteLine("Geben Sie die seitenlänge a ein ");
+
+                    string a = Console.ReadLine();
+
+                    if (a=="exit") 
+                    {
+                        Environment.Exit(0);
+                    }
+                    else if (a=="submenue")
+                    {
+                        subexit = true;
+
+                    }
+                    else if (a == "sonst")
+                    {
+                        
+                    }
+                    
+
+
+
+                         
+
+                } while (subexit == false);
+
+            }    
 
             static void Dreieck()
             {
+
+
+
+
+
+
+
+
+
 
             }
 
