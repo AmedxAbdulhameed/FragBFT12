@@ -13,8 +13,6 @@ namespace WIFragBFTKlassenBibliothek
 
             Console.WriteLine("Feature19");
 
-            Console.WriteLine("Immobilienrechner");
-
 
         }
     }
