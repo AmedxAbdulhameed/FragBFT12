@@ -31,14 +31,41 @@ namespace ETFragBFTKlassenBibliothek
 
                     Console.WriteLine("----------Widerstand----------");
 
-                    Console.WriteLine("Gib die Spannung an.");
-                    double Spannung = Convert.ToDouble(Console.ReadLine());
+
+                    double d_spannung;
+
+                    string s_spannung;                                     
+
+                    bool trypassout;                                    
+
+                    do
+                    {
+                        Console.WriteLine("Gib die Spannung an.");
+                        s_spannung = Console.ReadLine();
+
+                        trypassout = double.TryParse(s_spannung, out d_spannung);
+
+                    } while (trypassout == false);
+
+                    double d_stromstärke;
+                    string s_stromstärke;
+                    bool trypassout2;
+                    do
+                    {
+                        Console.WriteLine("Gib die Stromstärke an.");
+                        s_stromstärke = Console.ReadLine();
+
+                        trypassout2 = double.TryParse(s_stromstärke, out d_stromstärke);
 
 
-                    Console.WriteLine("Gib die Stromstärke an.");
+
+
+
+                    } while (trypassout2 == false);
+                    
                     double Stromstärke = Convert.ToDouble(Console.ReadLine());
 
-                    double ergebnis = (Spannung / Stromstärke);
+                    double ergebnis = (d_spannung / d_stromstärke);
                     Console.WriteLine("Der Widerstand beträgt {0:F2}.", ergebnis);
 
                     Console.Read();
@@ -86,7 +113,7 @@ namespace ETFragBFTKlassenBibliothek
 
                     break;
 
-                                    default:
+                    default:
                     Console.WriteLine("Ungültige Eingabe");
                     Console.Read();
                     Console.Clear();
