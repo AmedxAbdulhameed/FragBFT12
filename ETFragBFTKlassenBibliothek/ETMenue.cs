@@ -73,11 +73,9 @@ namespace ETFragBFTKlassenBibliothek
 
                         break;
 
-                    case "4":
-                        Console.Clear();
-                        Feature4.Feature4Funcion4();
+                    
 
-                        break;
+                      
 
                     case "hauptmenü":
                         Console.Clear();
