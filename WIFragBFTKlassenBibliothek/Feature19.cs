@@ -12,8 +12,16 @@ namespace WIFragBFTKlassenBibliothek
         {
             Console.WriteLine("Immobilienrechner");
 
-            Convert.ToInt32
+            
 
+            Console.WriteLine("Geben sie ihr Startkapital an:");
+
+            Console.ReadLine();
+
+
+
+            Console.ReadKey();
+            Console.Clear();
 
         }
     }
