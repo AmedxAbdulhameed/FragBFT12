@@ -11,24 +11,22 @@ namespace WIFragBFTKlassenBibliothek
         internal static void Feature19Funcion1()
         {
             Console.WriteLine("Immobilienrechner");
+          
+            Console.WriteLine("Geben sie den Gesamtpreis der Immobilie an:");
             
-            Console.WriteLine("Geben sie ihr Startkapital an:");
-
             int Startkapital = Convert.ToInt32(Console.ReadLine());
 
-           
-            
-            Console.WriteLine("Geben sie den Gesamtpreis der Immobilie an:");
+
+            Console.WriteLine("Geben sie ihr Startkapital an:");
 
             int Gesamtpreis = Convert.ToInt32(Console.ReadLine());
 
-            
 
             Console.WriteLine("Ihre Restliche Bausparsumme beträgt :");
 
             Console.WriteLine(Startkapital - Gesamtpreis);
 
-
+            
 
             Console.ReadKey();
             Console.Clear();
