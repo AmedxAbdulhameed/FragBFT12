@@ -11,6 +11,7 @@ namespace WIFragBFTKlassenBibliothek
         public static void Feature16Funcion1()
         {
             double Eingabe = 1, Lst = 0, Dst = 0, Ntgh;
+            string jn;
 
             do
             {
@@ -35,9 +36,12 @@ namespace WIFragBFTKlassenBibliothek
 
 
 
+                Console.WriteLine("Wollen Sie das Programm wiederholen? (j/n)");
+
+                jn = Console.ReadLine();
 
 
-            } while (Eingabe > 0);
+            } while (jn=="j");
         }
     }
 }
