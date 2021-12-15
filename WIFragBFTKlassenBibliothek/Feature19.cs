@@ -21,9 +21,14 @@ namespace WIFragBFTKlassenBibliothek
 
             int Gesamtpreis = Convert.ToInt32(Console.ReadLine());
 
-            Console.ReadLine();
+            int Gesamtpreis = Convert.ToInt32(Console.ReadLine());
 
 
+            Console.WriteLine("Ihre Restliche Bausparsumme beträgt :");
+
+            Console.WriteLine(Startkapital - Gesamtpreis);
+
+            
 
             Console.ReadKey();
             Console.Clear();
