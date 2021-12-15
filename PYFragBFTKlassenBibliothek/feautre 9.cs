@@ -101,15 +101,22 @@ namespace PYFragBFTKlassenBibliothek
         static void Pyramide()
         {
 
+            Console.WriteLine("Pyramide");
+            //Meine erste Zeile
         }
 
         static void Kugel()
         {
 
+
+
+
         }
 
         static void Wuerfel()
         {
+
+
 
         }
 
