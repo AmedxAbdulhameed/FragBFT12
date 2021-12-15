@@ -10,15 +10,17 @@ namespace ETFragBFTKlassenBibliothek
     {
         public static void Feature3Funcion3()
         {
-            while (true)
-            {
-             Console.WriteLine("------------------------------------------------------------------------------------\n" +
-                                  "                              >>> Spannungsfall <<<\n" +
-                                  "------------------------------------------------------------------------------------\n\n");
+            string jn;
 
-             Console.WriteLine("Bitte geben Sie die Werte für die Formel(keine anderen eingaben möglivh oder Formeln )");
-            
-                
+             do
+            {
+                Console.WriteLine("------------------------------------------------------------------------------------\n" +
+                                     "                              >>> Spannungsfall <<<\n" +
+                                     "------------------------------------------------------------------------------------\n\n");
+
+                Console.WriteLine("Bitte geben Sie die Werte für die Formel(keine anderen eingaben möglivh oder Formeln )");
+
+
                 try
                 {
                     Console.WriteLine("Bitte geben Sie I = Stromkreis in A  ein");
@@ -48,11 +50,23 @@ namespace ETFragBFTKlassenBibliothek
                     Console.ReadKey();
                     Console.Clear();
 
+
                 }
+                Console.WriteLine("Wollen Sie das Programm wiederholen? (j/n)");
+
 
                 
-                
-            }
+                jn = Console.ReadLine();
+
+
+
+                Console.Clear();
+
+
+
+             } while (jn == "j");
+
+
 
         }
 
