@@ -40,6 +40,7 @@ namespace WIFragBFTKlassenBibliothek
 
                 jn = Console.ReadLine();
 
+                Console.Clear();
 
             } while (jn=="j");
         }
