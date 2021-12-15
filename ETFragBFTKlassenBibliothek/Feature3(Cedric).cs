@@ -21,9 +21,10 @@ namespace ETFragBFTKlassenBibliothek
                 
                 try
                 {
+
                     Console.WriteLine("Bitte geben Sie I = Stromkreis in A  ein");
                     double zahl1 = Convert.ToDouble(Console.ReadLine());
-
+                         
                     Console.WriteLine("Bitte geben Sie l= Leistungslänge in m ein");
                     double zahl2 = Convert.ToDouble(Console.ReadLine());
 
