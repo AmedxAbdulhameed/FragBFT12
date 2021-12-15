@@ -47,8 +47,7 @@ namespace ETFragBFTKlassenBibliothek
                 Console.WriteLine("Wählen Sie eine der folgenden Themenbereiche:\n");
                 Console.WriteLine("\t1 - Leistungsrechner");
                 Console.WriteLine("\t2 - Ohmisches Gesetz");
-                Console.WriteLine("\t3 - Berechnung von Wiederstand");
-                Console.WriteLine("\t4 - Spannungsfall\n");
+                Console.WriteLine("\t3 - Spannungsfall");
                 Console.Write("Eingabe:");
                 HauptAusw = Console.ReadLine();
 
