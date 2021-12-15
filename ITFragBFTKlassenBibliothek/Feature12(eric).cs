@@ -53,8 +53,41 @@ namespace ITFragBFTKlassenBibliothek
                 goto redo;
             }
         }
+
+        internal static double[] nullstellenFinden(double p, double q)
+        {
+            double minusPHalbe = (p * (-1))/2;
+            double pHalbeQuadrat = (p / 2) * (p / 2);
+            double minusQ = q * (-1);
+            double pHalbeQuadratMinusQ = pHalbeQuadrat - minusQ;
+
+            double wurzel = Math.Sqrt(pHalbeQuadratMinusQ);
+            if (wurzel == double.NaN)
+            {
+                return new [] {double.NaN, double.NaN};
+            }
+            //da fehlt noch was
+
+
+        }
         internal static void Feature12Funcion1()
         {
+            Console.WriteLine("eingabe von q");
+            Console.ReadLine();
+            String eingabeVonQ=Console.ReadLine();
+            Console.WriteLine("eingabe von p");
+            Console.ReadLine();
+            String eingabeVonP = Console.ReadLine();
+            double eingabeQ;
+            double.TryParse(eingabeVonQ,out eingabeQ);
+            double eingabeP;
+            double.TryParse(eingabeVonP, out eingabeP);
+            double[] Nulstellen = nulstellenFinden(eingabeVonP, eingabeVonQ);
+
+
+
+
+
             Console.WriteLine("Feature");
         }
     }
