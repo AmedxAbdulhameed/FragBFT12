@@ -25,7 +25,7 @@ namespace ETFragBFTKlassenBibliothek
                                       "------------------------------------------------------------------------------------\n\n");
 
                     Console.WriteLine("Eingabe: exit\t\t->\tbeendet das Programm");
-                    Console.WriteLine("Eingabe: hauptmenü\t->\tzurück zum Hauptmenü\n");
+                    Console.WriteLine("Eingabe: submenü\t->\tzurück zum submenü\n");
 
                     Console.WriteLine("Ohmsches Gesetz");
                     Console.WriteLine("---------------------\n");
@@ -140,7 +140,7 @@ namespace ETFragBFTKlassenBibliothek
 
                         break;
                     }
-                    else if (rechnung == "hauptmenü")
+                    else if (rechnung == "submenü")
                     {
                         Console.Clear();
                         ETMenue.ETSubMenue();

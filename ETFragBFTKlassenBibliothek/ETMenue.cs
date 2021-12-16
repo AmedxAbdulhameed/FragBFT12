@@ -38,7 +38,6 @@ namespace ETFragBFTKlassenBibliothek
                 //Beschreibung der Software.
                 Console.WriteLine("\n\nMit diesem Programm können sie Verschiede Bereiche der Elektrotechnik Berechnen\n");
                 Console.WriteLine("- Elektrotechnische Grundlagen");
-                Console.WriteLine("- Berechnung der Bauelemente(Eingabe oder Auswahl der Parameter)");
                 Console.WriteLine("- Leitungsberechnung\n");
               
                 Hmenue = false;
