@@ -9,6 +9,9 @@ namespace WIFragBFTKlassenBibliothek
     class Feature19
     {
         internal static void Feature19Funcion1()
+       
+            
+        
         {
             Console.WriteLine("Immobilienrechner");
 
@@ -39,18 +42,20 @@ namespace WIFragBFTKlassenBibliothek
 
             Console.ReadLine();
 
-            Console.WriteLine("Ihr Restlich zu bezahlender Betrag beträgt :");
+            Console.WriteLine("Ihr Kredithöhe Betrag beträgt :");
 
             int Betrag = Bausparsumme / 100 * Zinnssatz + Bausparsumme ;
 
-            Console.WriteLine(Betrag / 100 * Zinnssatz + Bausparsumme );
+            Console.WriteLine(Bausparsumme / 100 * Zinnssatz + Bausparsumme);
 
-            Console.WriteLine("Geben sie ihr möglichen Monatlichen zu Zahlenden Betrag an :");
+            Console.WriteLine("In wie vielen Monaten möchten Sie den kredit abzahlen?");
+             
+            int Monaten = Convert.ToInt32(Console.ReadLine());
 
-            Console.ReadLine();
-
-
-
+            Console.WriteLine("sie müssen Monatlich :");
+            
+            Console.WriteLine(Betrag / Monaten);
+            
             Console.ReadKey();
             Console.Clear();
 
