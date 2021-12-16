@@ -66,23 +66,62 @@ namespace ITFragBFTKlassenBibliothek
             {
                 return new [] {double.NaN, double.NaN};
             }
-            //da fehlt noch was
-
-
+            double x1 = minusPHalbe - wurzel;
+            double x2 = minusPHalbe + wurzel;
+            return new[] { x1, x2 };
         }
         internal static void Feature12Funcion1()
         {
-            Console.WriteLine("eingabe von q");
-            Console.ReadLine();
-            String eingabeVonQ=Console.ReadLine();
-            Console.WriteLine("eingabe von p");
-            Console.ReadLine();
-            String eingabeVonP = Console.ReadLine();
-            double eingabeQ;
-            double.TryParse(eingabeVonQ,out eingabeQ);
-            double eingabeP;
-            double.TryParse(eingabeVonP, out eingabeP);
-            double[] Nulstellen = nulstellenFinden(eingabeVonP, eingabeVonQ);
+            do
+            {
+                bool Wiederholen = true;
+                Console.WriteLine("eingabe von q");
+                
+                String eingabeVonQ = Console.ReadLine();
+                Console.WriteLine("eingabe von p");
+             
+                String eingabeVonP = Console.ReadLine();
+                double eingabeQ;
+                double.TryParse(eingabeVonQ, out eingabeQ);
+                double eingabeP;
+                double.TryParse(eingabeVonP, out eingabeP);
+                double[] Nullstellen = nullstellenFinden(eingabeP, eingabeQ);
+
+
+
+                //Console.WriteLine(Nullstellen[0]);
+                //Console.WriteLine(Nullstellen[1]);
+                //Console.WriteLine("Kein Ergebniss");
+                if (Nullstellen[0] == double.NaN && Nullstellen[1]== double.NaN)
+                {
+                    Console.WriteLine("kein Ergebnis");
+                    Console.WriteLine("drücken sie eine Taste");
+                    Console.ReadLine();
+                    Wiederholen = true;
+
+
+
+
+
+
+                }
+                else
+                {
+                    Console.WriteLine("Ergebnis");
+                    Console.WriteLine("drücken sie eine Taste");
+                    Console.ReadLine();
+
+
+
+
+
+                }
+                Console.Clear
+
+            } while ();
+
+
+
 
 
 
