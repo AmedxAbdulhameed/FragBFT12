@@ -15,10 +15,9 @@ namespace WIFragBFTKlassenBibliothek
         {
             Console.WriteLine("Immobilienrechner");
 
-            Console.WriteLine("Geben sie ihr Startkapital in Euro an:");
+            Console.WriteLine("Geben sie ihr Startkapital in Euro an:");           
 
             int Startkapital = Convert.ToInt32(Console.ReadLine());
-
 
             Console.WriteLine("Geben sie den Gesamtpreis der Immobilie an:");
 
@@ -29,8 +28,6 @@ namespace WIFragBFTKlassenBibliothek
             int Bausparsumme = Gesamtpreis - Startkapital;
 
             Console.WriteLine(Gesamtpreis - Startkapital);
-
-            
 
             Console.WriteLine("Geben sie ihren Zinnssatz in % ein");
 
@@ -51,11 +48,13 @@ namespace WIFragBFTKlassenBibliothek
             Console.WriteLine("In wie vielen Monaten möchten Sie den kredit abzahlen?");
              
             int Monaten = Convert.ToInt32(Console.ReadLine());
-
+            
             Console.WriteLine("sie müssen Monatlich :");
             
             Console.WriteLine(Betrag / Monaten);
-            
+
+            Console.WriteLine("Euro bezahlen");
+
             Console.ReadKey();
             Console.Clear();
 
