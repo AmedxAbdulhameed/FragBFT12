@@ -1,10 +1,10 @@
 ﻿using System;
 
-namespace Zinsrechner_von_Bjar_rashid
+namespace WIFragBFTKlassenBibliothek
 {
-    class Program
+    class Feature18
     {
-        static void Main(string[] args)
+        public static void Feature18Funcion1()
         {
             double StartKapital;
             double Zinsen;
@@ -12,13 +12,13 @@ namespace Zinsrechner_von_Bjar_rashid
             double Endkapital;
 
 
-            Console.WriteLine("Geben Sie Ihr Kapital an");
+            Console.WriteLine("Geben Sie Ihr Kapital in EUR an");
             StartKapital = Convert.ToDouble(Console.ReadLine());
 
-            Console.WriteLine("Wie viele Jahre wollen sie ausrechenen");
+            Console.WriteLine("Wie viele Jahre wollen Sie anlegen?");
             Jahre = Convert.ToDouble(Console.ReadLine());
 
-            Console.WriteLine("Geben Sie Ihre Zinsen ein");
+            Console.WriteLine("Geben Sie Ihren Zinssatz pro Jahr ein");
             Zinsen = Convert.ToDouble(Console.ReadLine());
 
             Console.WriteLine("Die Ergebnisse für die folgenden Jahre sind");
@@ -31,9 +31,11 @@ namespace Zinsrechner_von_Bjar_rashid
             Endkapital = StartKapital * ErgPSatz;
             Zinsen = Endkapital - StartKapital;
 
-            Console.WriteLine($"ihr endergebnis ist: {Endkapital:f5}");
+            Console.WriteLine("----------------------------------------");
+            Console.WriteLine($"Ihr Endergebnis ist: {Endkapital:f2}EUR");
+            Console.WriteLine("----------------------------------------");
             Console.ReadKey();
-
+            Console.Clear();
 
         }
     }
