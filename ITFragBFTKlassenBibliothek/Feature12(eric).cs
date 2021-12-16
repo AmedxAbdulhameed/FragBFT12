@@ -54,27 +54,29 @@ namespace ITFragBFTKlassenBibliothek
             }
         }
 
-        internal static double[] nullstellenFinden(double p, double q)
+        internal static double?[] nullstellenFinden(double p, double q) // funktion von angelo
         {
             double minusPHalbe = (p * (-1))/2;
             double pHalbeQuadrat = (p / 2) * (p / 2);
-            double minusQ = q * (-1);
-            double pHalbeQuadratMinusQ = pHalbeQuadrat - minusQ;
+            double pHalbeQuadratMinusQ = pHalbeQuadrat - q;
 
             double wurzel = Math.Sqrt(pHalbeQuadratMinusQ);
-            if (wurzel == double.NaN)
+            //Console.WriteLine(wurzel); fürs debuging
+            if (double.IsNaN(Math.Sqrt(pHalbeQuadratMinusQ)))
             {
-                return new [] {double.NaN, double.NaN};
+                //Console.WriteLine("klappt"); für debuging 
+                return new double?[] {null, null}; 
             }
             double x1 = minusPHalbe - wurzel;
             double x2 = minusPHalbe + wurzel;
-            return new[] { x1, x2 };
+            return new double?[] { x1, x2 };
         }
         internal static void Feature12Funcion1()
-        {
+        { 
+            bool Wiederholen = false;
             do
             {
-                bool Wiederholen = true;
+               
                 Console.WriteLine("eingabe von q");
                 
                 String eingabeVonQ = Console.ReadLine();
@@ -85,49 +87,34 @@ namespace ITFragBFTKlassenBibliothek
                 double.TryParse(eingabeVonQ, out eingabeQ);
                 double eingabeP;
                 double.TryParse(eingabeVonP, out eingabeP);
-                double[] Nullstellen = nullstellenFinden(eingabeP, eingabeQ);
+                double?[] Nullstellen = nullstellenFinden(eingabeP, eingabeQ);
 
 
 
                 //Console.WriteLine(Nullstellen[0]);
                 //Console.WriteLine(Nullstellen[1]);
                 //Console.WriteLine("Kein Ergebniss");
-                if (Nullstellen[0] == double.NaN && Nullstellen[1]== double.NaN)
+                if (Nullstellen[0] == null && Nullstellen[1]== null)
                 {
                     Console.WriteLine("kein Ergebnis");
                     Console.WriteLine("drücken sie eine Taste");
                     Console.ReadLine();
                     Wiederholen = true;
-
-
-
-
-
-
                 }
-                else
+                else //if (Nullstellen[0] >= double.MaxValue && Nullstellen[1] >= double.MaxValue)
                 {
-                    Console.WriteLine("Ergebnis");
+                    Console.WriteLine("Ergebnis: {0} , {1}",Nullstellen[0],Nullstellen[1]);
                     Console.WriteLine("drücken sie eine Taste");
                     Console.ReadLine();
-
-
-
-
-
+                    Wiederholen = false;
                 }
-                Console.Clear
-
-            } while ();
-
+                Console.ReadLine();
+                Console.Clear();
 
 
+            } while (Wiederholen);
 
-
-
-
-
-            Console.WriteLine("Feature");
+            //Console.WriteLine("Feature");
         }
     }
 }
