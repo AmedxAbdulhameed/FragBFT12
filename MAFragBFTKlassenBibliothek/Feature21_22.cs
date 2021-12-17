@@ -134,6 +134,26 @@ namespace MAFragBFTKlassenBibliothek
 
             Console.WriteLine("{0}x = {1} ", g, e);
 
+
+
+
+
+            double sweite = 1;
+            double von = -10;
+            double bis = 10;
+
+
+
+            Console.WriteLine("|{0,10}|{1,10}|", "x", "y");
+            Console.WriteLine("----------------------|");
+
+
+            for (double l_x = von; l_x <= bis; l_x += sweite)
+            {
+                Console.WriteLine("|{0,10:F2}|{1,10:F2}|", l_x, (l_x * m + b));
+            }
+            Console.ReadKey();
+            Console.Clear();
         }
 
         static void Nullstellen()
