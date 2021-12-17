@@ -102,7 +102,37 @@ namespace MAFragBFTKlassenBibliothek
 
         static void Wertetabelle()
         {
+            double c = 0; // 0
+            double d; //B
+            double f; // B
+            double e;
+            double g;
 
+
+            Console.WriteLine("Nullstelle Berechnen\n");
+            Console.WriteLine("Geben sie m ein");
+            double m = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Geben sie b ein");
+            double b = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("{0}x + {1} = {2} ", m, b, c);
+
+
+
+            d = b - b;
+
+
+
+            f = c - b;
+
+            Console.WriteLine("{0}x = {1} ", m, f);
+
+            e = f / m;
+
+
+
+            g = m / m;
+
+            Console.WriteLine("{0}x = {1} ", g, e);
 
         }
 
