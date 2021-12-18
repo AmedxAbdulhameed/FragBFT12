@@ -9,56 +9,69 @@ namespace WIFragBFTKlassenBibliothek
     class Feature19
     {
         internal static void Feature19Funcion1()
-       
+        { 
             
-        
-        {
-            Console.WriteLine("Immobilienrechner");
 
-            Console.WriteLine("Geben sie ihr Startkapital in Euro an:");           
 
-            int Startkapital = Convert.ToInt32(Console.ReadLine());
+           
 
-            Console.WriteLine("Geben sie den Gesamtpreis der Immobilie an:");
+            {
 
-            int Gesamtpreis = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("Ihre Restliche Bausparsumme beträgt :");
+                Console.WriteLine("Immobilienrechner");
 
-            int Bausparsumme = Gesamtpreis - Startkapital;
+                Console.WriteLine("Geben sie ihr Startkapital in Euro an:");
 
-            Console.WriteLine(Gesamtpreis - Startkapital);
+                int Startkapital = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("Geben sie ihren Zinnssatz in % ein");
+                Console.WriteLine("Geben sie den Gesamtpreis der Immobilie an:");
 
-            int Zinnssatz = Convert.ToInt32(Console.ReadLine());
+                int Gesamtpreis = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("Ihr Zinnssatz in Euro :");
+                Console.WriteLine("Ihre Restliche Bausparsumme beträgt :");
 
-            Console.WriteLine(Bausparsumme /100 * Zinnssatz );
+                int Bausparsumme = Gesamtpreis - Startkapital;
 
-            Console.ReadLine();
+                Console.WriteLine(Gesamtpreis - Startkapital);
 
-            Console.WriteLine("Ihr Kredithöhe Betrag beträgt :");
+                Console.WriteLine("Geben sie ihren Zinnssatz in % ein");
 
-            int Betrag = Bausparsumme / 100 * Zinnssatz + Bausparsumme ;
+                int Zinnssatz = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine(Bausparsumme / 100 * Zinnssatz + Bausparsumme);
+                Console.WriteLine("Ihr Zinnssatz in Euro :");
 
-            Console.WriteLine("In wie vielen Monaten möchten Sie den kredit abzahlen?");
-             
-            int Monaten = Convert.ToInt32(Console.ReadLine());
-            
-            Console.WriteLine("sie müssen Monatlich :");
-            
-            Console.WriteLine(Betrag / Monaten);
+                Console.WriteLine(Bausparsumme / 100 * Zinnssatz);
 
-            Console.WriteLine("Euro bezahlen");
+                Console.ReadLine();
 
-            Console.ReadKey();
-            Console.Clear();
+                Console.WriteLine("Ihr Kredithöhe Betrag beträgt :");
+
+                int Betrag = Bausparsumme / 100 * Zinnssatz + Bausparsumme;
+
+                Console.WriteLine(Bausparsumme / 100 * Zinnssatz + Bausparsumme);
+
+                Console.WriteLine("In wie vielen Monaten möchten Sie den kredit abzahlen?");
+
+                int Monaten = Convert.ToInt32(Console.ReadLine());
+
+                Console.WriteLine("sie müssen Monatlich Bezahlen :");
+
+                Console.WriteLine(Betrag / Monaten);
+
+
+
+
+                Console.ReadKey();
+                Console.Clear();
+
+                
+
+
+            }
+
 
         }
+
     }
 }
 
