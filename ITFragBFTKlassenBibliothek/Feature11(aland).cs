@@ -62,29 +62,29 @@ namespace ITFragBFTKlassenBibliothek
 
         static internal void Feature11Funcion1()
         {
-                Console.WriteLine("Geben sie hiere Binärezahl ein");
-                string input;
-                input = Console.ReadLine();
-                input = Reverse(input);
-                double Summe = 0;
-                //wenn input[0] eine '1'
-                //dann addiere zur summe
-                int I = 0;
-                while (I < input.Length)
+            Console.WriteLine("Geben sie hiere Binärezahl ein");
+            string input;
+            input = Console.ReadLine();
+            input = Reverse(input);
+            double Summe = 0;
+            //wenn input[0] eine '1'
+            //dann addiere zur summe
+            int I = 0;
+            while (I < input.Length)
+            {
+                if ('1' == input[I])
                 {
-                    if ('1' == input[I])
-                    {
-                        Summe = Summe + Math.Pow(2, I);
-                    }
-
-
-
-                    I++;
+                    Summe = Summe + Math.Pow(2, I);
                 }
 
-                Console.WriteLine("Ihre Dezimal zahl ist {0}", Summe);
-                Console.ReadLine();
 
+
+                I++;
+            }
+
+            Console.WriteLine("Ihre Dezimal zahl ist {0}", Summe);
+            Console.ReadLine();
+            Console.Clear();
         }
 
     }

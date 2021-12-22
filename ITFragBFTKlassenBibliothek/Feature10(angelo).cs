@@ -48,6 +48,7 @@ namespace ITFragBFTKlassenBibliothek
 
                 Console.WriteLine(Newton_sqrt(input)); 
                 Console.ReadLine();
+                Console.Clear();
             }
             else if (menueAuswahl == "kubikwurzel") 
             {

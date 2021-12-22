@@ -29,14 +29,14 @@ namespace ITFragBFTKlassenBibliothek
                 Console.Title = "FragBFT";
 
                 Console.WriteLine("------------------------------------------------------------------------------------\n" +
-                                  "                              >>> Bereich Submenü <<<\n" +
+                                  "                           >>> Bereich IT Entwickellung <<<\n" +
                                   "------------------------------------------------------------------------------------\n\n");
 
                 Console.WriteLine("Eingabe: exit\t\t->\tbeendet das Programm");
                 Console.WriteLine("Eingabe: hauptmenü\t->\tzurück zum Hauptmenü");
 
                 //Beschreibung der Software.
-                Console.WriteLine("\n\nHier können Sachen die für Informatiker relevat sind berechnet werden\n\n"); // mach ich später xD
+                Console.WriteLine("\n\nHier können Sachen die für die IT relevat sind berechnet werden\n\n"); 
 
                 Hmenue = false;
 
@@ -45,8 +45,8 @@ namespace ITFragBFTKlassenBibliothek
                 Console.WriteLine("\t1 - Binär zu Dezimal");
                 Console.WriteLine("\t2 - Nullstellen-Rechner");
                 Console.WriteLine("\t3 - Bits und Byte Rechner");
-                Console.WriteLine("\t4 - Vektoren-Rechner\n");
-                Console.WriteLine("\t5 - Newton's methode");
+                Console.WriteLine("\t4 - Vektoren-Rechner");
+                Console.WriteLine("\t5 - Newton's methode\n");
                 Console.Write("Eingabe:");
                 HauptAusw = Console.ReadLine().ToLower();
 

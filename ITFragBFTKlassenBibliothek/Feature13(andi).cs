@@ -33,16 +33,11 @@ namespace ITFragBFTKlassenBibliothek
                               "------------------------------------------------------------------------------------\n\n");
         redo:
             Console.WriteLine("Eingabe: hauptmenü\t->\tzurück zum Hauptmenü");
-            Console.WriteLine("Eingabe: zu Byte\t->\tum von Bit zu Byte umzurechnen");
-            Console.WriteLine("Eingabe: zu bit\t->\tum von Byte zu Bit umzurechnen");
+            Console.WriteLine("Eingabe: R\t->\tzum bits&byte rechner");
             string menueAuswahl = Console.ReadLine().ToLower();
-            if (menueAuswahl == "zu byte")
+            if (menueAuswahl == "r")
             {
                 Feature13Funcion1();
-            }
-            else if (menueAuswahl == "zu bit") 
-            {
-                Feature13Funcion2();
             }
             else if (menueAuswahl == "hauptmenü")
             {
@@ -93,10 +88,6 @@ namespace ITFragBFTKlassenBibliothek
             Console.WriteLine("drücken sie eine taste");
             Console.ReadLine();
             Console.Clear();
-        }
-        static internal void Feature13Funcion2()
-        {
-          
         }
     }
 }
