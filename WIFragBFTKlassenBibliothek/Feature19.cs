@@ -19,7 +19,7 @@ namespace WIFragBFTKlassenBibliothek
 
 
                     Console.WriteLine("Immobilienrechner");
-
+                       
                     Console.WriteLine("Geben sie ihr Startkapital in Euro an:");
 
                     int Startkapital = Convert.ToInt32(Console.ReadLine());
