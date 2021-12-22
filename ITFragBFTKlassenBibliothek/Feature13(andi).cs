@@ -56,13 +56,47 @@ namespace ITFragBFTKlassenBibliothek
         }
         static internal void Feature13Funcion1()
         {
-            //bits zu bytes
-            Console.WriteLine("Feature1");
+            int bits = 0;
+            int bytes = 0;
+            bool falscheEingabe = false; 
+            do
+            {
+                Console.WriteLine("Wilkommen zum Bit und Byte Rechner");
+                Console.WriteLine("Wenn Sie von Bit zu Byte rechnen dann drücken Sie die '1', falls von Byte zu Bit dann drücken Sie die '2'");
+                string eingabe = Console.ReadLine();
+                if (eingabe == "1")
+                {
+                    falscheEingabe = false;
+                    Console.WriteLine("Geben Sie Ihre Anzahl an Bits ein");
+                    string eingabebits = Console.ReadLine();
+                    int.TryParse(eingabebits, out bits);
+                    bytes = bits / 8;
+                    Console.WriteLine($"Das Ergebnis ist {bytes} bytes");
+
+                }
+                else if (eingabe == "2")
+                {
+                    falscheEingabe = false;
+                    Console.WriteLine("Geben Sie Ihre Anzahl an Bytes ein");
+                    string eingabebytes = Console.ReadLine();
+                    int.TryParse(eingabebytes, out bytes);
+                    bits = bytes * 8;
+                    Console.WriteLine($"Das Ergebnis ist {bits} bits");
+                }
+                else
+                {
+                    Console.WriteLine("falsche eingabe!");
+                    falscheEingabe = true;
+                    Console.ReadLine();
+                }
+            } while (falscheEingabe);
+            Console.WriteLine("drücken sie eine taste");
+            Console.ReadLine();
+            Console.Clear();
         }
         static internal void Feature13Funcion2()
         {
-            //bytes zu bits
-            Console.WriteLine("Feature2");
+          
         }
     }
 }
