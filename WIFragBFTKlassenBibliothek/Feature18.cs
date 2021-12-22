@@ -29,9 +29,11 @@ namespace WIFragBFTKlassenBibliothek
                 double TempPSatz = 1 + ((double)Zinsen / 100);
             double ErgPSatz = Math.Pow(TempPSatz, Jahre);
 
+
             Endkapital = StartKapital * ErgPSatz;
             Zinsen = Endkapital - StartKapital;
 
+            
             Console.WriteLine("----------------------------------------");
             Console.WriteLine($"Ihr Endergebnis ist: {Endkapital:f2}EUR");
             Console.WriteLine("----------------------------------------");
