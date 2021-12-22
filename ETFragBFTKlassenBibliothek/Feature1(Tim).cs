@@ -119,7 +119,7 @@ namespace ETFragBFTKlassenBibliothek
                 ergebnis = zahl1 * zahl2;
 
 
-                Console.WriteLine($"das ergebnis P für Leistung ist: {ergebnis}");
+                Console.WriteLine($"das ergebnis P für Leistung ist: {ergebnis}W");
                 Console.Read();
                 Console.Clear();
 
@@ -149,7 +149,7 @@ namespace ETFragBFTKlassenBibliothek
 
                 ergebnis = zahl1 / zahl2;
 
-                Console.WriteLine($"das ergebnis I für den Elektrischen Strom ist: {ergebnis}");
+                Console.WriteLine($"das ergebnis I für den Elektrischen Strom ist: {ergebnis}A");
                 Console.Read();
                 Console.Clear();
             }
@@ -179,7 +179,7 @@ namespace ETFragBFTKlassenBibliothek
 
                 ergebnis = zahl1 / zahl2;
 
-                Console.WriteLine($"das ergebnis U für die Elektrische Spannung ist: {ergebnis}");
+                Console.WriteLine($"das ergebnis U für die Elektrische Spannung ist: {ergebnis}V");
                 Console.Read();
                 Console.Clear();
             }
