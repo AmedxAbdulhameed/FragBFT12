@@ -34,7 +34,7 @@ namespace WIFragBFTKlassenBibliothek
                 Console.WriteLine("Durchschnittsteuersatz");
                 Console.WriteLine(Dst);
 
-
+                
 
                 Console.WriteLine("Wollen Sie das Programm wiederholen? (j/n)");
 
