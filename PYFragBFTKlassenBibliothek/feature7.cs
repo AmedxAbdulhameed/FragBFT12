@@ -7,10 +7,11 @@ using Figgle;
 
 namespace PYFragBFTKlassenBibliothek
 {
-    class feature7
+    class Feature7
     {
         internal static void Feature7Funcion1()
         {
+
            
 
             double Neustart = 0;
@@ -155,6 +156,7 @@ namespace PYFragBFTKlassenBibliothek
             } while (Neustart == 1);
 
            
+
 
 
 
