@@ -8,7 +8,7 @@ namespace WIFragBFTKlassenBibliothek
 {
     class Feature16
     {
-        internal static void Feature16Funcion1()
+        public static void Feature16Funcion1()
         {
             Console.WriteLine("Feature16");
         }
