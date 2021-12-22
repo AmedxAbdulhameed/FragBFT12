@@ -60,7 +60,6 @@ namespace WIFragBFTKlassenBibliothek
 
 
 
-
                     Console.ReadKey();
                     Console.Clear();
 
