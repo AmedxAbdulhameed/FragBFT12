@@ -143,7 +143,7 @@ namespace ETFragBFTKlassenBibliothek
                 Console.WriteLine("Geben sie hier eine Zahl P für die Leistung ein");
                 Double zahl1 = Convert.ToDouble(Console.ReadLine());
 
-                Console.WriteLine("Geben sie Hier eine Zweite Zahl U für den elektrische Spannung ein");
+                Console.WriteLine("Geben sie Hier eine Zweite Zahl U für die elektrische Spannung ein");
                 Double zahl2 = Convert.ToDouble(Console.ReadLine());
                 Double ergebnis = 0;
 
@@ -169,7 +169,7 @@ namespace ETFragBFTKlassenBibliothek
             try
             {
                 
-                Console.WriteLine("Geben sie hier eine Zahl I für die elektrischen Strom ein");
+                Console.WriteLine("Geben sie hier eine Zahl I für den elektrischen Strom ein");
                 Double zahl1 = Convert.ToDouble(Console.ReadLine());
 
                 Console.WriteLine("Geben sie Hier eine Zweite Zahl P für die Leistung ein");
