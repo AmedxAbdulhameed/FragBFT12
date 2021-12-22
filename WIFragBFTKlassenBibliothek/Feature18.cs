@@ -11,6 +11,7 @@ namespace WIFragBFTKlassenBibliothek
             double Jahre;
             double Endkapital;
 
+            Console.WriteLine("-------------Zinsrechner----------------");
 
             Console.WriteLine("Geben Sie Ihr Kapital in EUR an");
             StartKapital = Convert.ToDouble(Console.ReadLine());
@@ -23,9 +24,9 @@ namespace WIFragBFTKlassenBibliothek
 
             Console.WriteLine("Die Ergebnisse für die folgenden Jahre sind");
 
-
-
-            double TempPSatz = 1 + ((double)Zinsen / 100);
+           
+                
+                double TempPSatz = 1 + ((double)Zinsen / 100);
             double ErgPSatz = Math.Pow(TempPSatz, Jahre);
 
             Endkapital = StartKapital * ErgPSatz;
