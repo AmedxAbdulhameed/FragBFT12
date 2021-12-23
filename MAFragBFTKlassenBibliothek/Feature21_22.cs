@@ -103,6 +103,30 @@ namespace MAFragBFTKlassenBibliothek
         static void Wertetabelle()
         {
 
+            Console.WriteLine("Wertetabelle Ausgabe\n");
+            Console.WriteLine("Geben sie m ein");
+            double m = Convert.ToDouble(Console.ReadLine());
+                
+
+            Console.WriteLine("Geben sie b ein");
+            double b = Convert.ToDouble(Console.ReadLine());
+
+
+            string X = "x";
+            string Y = "y";
+
+            Console.WriteLine("|{ 0,10},{ 1,10}|", X, Y);
+            for (int x_z = -5; x_z <= 5; x_z++)
+
+            {
+                Console.WriteLine("|{ 0,10}|{ 1,10}|", x_z, m * x_z + b);
+
+            }
+
+            Console.ReadKey();
+
+
+
 
         }
 
@@ -126,7 +150,6 @@ namespace MAFragBFTKlassenBibliothek
 
             d = b - b;
 
-            Console.WriteLine("{0}x + {1} = {2} ", m, d, c);
 
             f = c - b;
 
@@ -134,7 +157,6 @@ namespace MAFragBFTKlassenBibliothek
 
             e = f / m;
 
-            Console.WriteLine("{0}x {1} ", m, e);
 
             g = m / m;
 
