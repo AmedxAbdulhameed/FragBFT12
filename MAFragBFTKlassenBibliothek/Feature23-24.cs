@@ -36,7 +36,7 @@ namespace MAFragBFTKlassenBibliothek
                                   "------------------------------------------------------------------------------------\n\n");
 
                 Console.WriteLine("Eingabe: exit\t\t->\tbeendet das Programm");
-                Console.WriteLine("Eingabe: submenü\t->\tzurück zum Hauptmenü");
+                Console.WriteLine("Eingabe: submenü\t->\tzurück zum Subptmenü");
 
                 //Beschreibung der Software.
                 Console.WriteLine("\n\nMit diesem Program können Sie Kreis,Parallelogramm,Rechteck und Dreieck Flächen berechnen\n");
@@ -48,7 +48,7 @@ namespace MAFragBFTKlassenBibliothek
                 Console.WriteLine("\t1 - Kreis ");
                 Console.WriteLine("\t2 - Parallelogramm");
                 Console.WriteLine("\t3 - Rechteck");
-                Console.WriteLine("\t1 - Dreieck");
+                Console.WriteLine("\t4 - Dreieck");
                 Console.Write("Eingabe:");
                 HauptAusw = Console.ReadLine();
 
@@ -59,7 +59,7 @@ namespace MAFragBFTKlassenBibliothek
                         Console.Clear();
                         Kreis();
                         break;
-                        
+
 
                     case "2":
                         Console.Clear();
@@ -99,33 +99,165 @@ namespace MAFragBFTKlassenBibliothek
                 }
 
 
-            } while (!Hmenue);
+            } while (!Hmenue);              
+        }
 
 
 
+        static void Kreis()
+        {
 
+            bool subexit = false;
 
-            static void Kreis()
+            do
             {
+                Console.WriteLine
+                    (FiggleFonts.Slant.Render("^Frag Aras amca"));
+                Console.WriteLine("------------------------------------------------------------------------------------\n" +
+                                  "                              >>> Kreisflächenberechnung<<<\n" +
+                                  "------------------------------------------------------------------------------------\n\n");
 
-            }
-            static void Parallelogramm()
+
+                Console.WriteLine("Eingabe: exit\t\t->\tbeendet das Programm");
+                Console.WriteLine("Eingabe: submenü\t->\tzurück zum Subptmenü");
+                Console.WriteLine("\nGeben Sie r ein");
+
+
+                String r = Console.ReadLine();
+                double d_r = 0;
+                bool tryparse = true;
+
+                if (r == "exit")
+                {
+                    Environment.Exit(0);
+                }
+                else if (r == "submenue")
+                {
+                    subexit = true;
+                }
+                else
+                {
+
+
+
+
+                    try
+                    {
+                        d_r = Convert.ToDouble(r);
+                    }
+                    catch (Exception e)
+                    {
+
+                        tryparse = false;
+                    }
+
+
+                    if (tryparse == true && d_r > 0)
+                    {
+                        Console.WriteLine("Die Fläche beträgt:{0,20:F2}m^2", d_r * Math.PI);
+                        Console.ReadKey();
+
+                    }
+                    else
+                    {
+                        Console.WriteLine("Fehleingabe");
+                        Console.ReadKey();
+                    }
+                }
+                Console.Clear();
+            } while (subexit == false);
+        }
+
+
+        static void Rechteck()
+        {
+
+        }
+
+        static void Dreieck()
+        {
+
+        }
+
+        static void Parallelogramm()
+
+
+        {
+
+            bool subexit = false;
+            double d_a = 0;
+            double d_h = 0;
+
+            do
             {
+                Console.WriteLine
+                   (FiggleFonts.Slant.Render("Frag Aras Amca"));
+                Console.WriteLine("------------------------------------------------------------------------------------\n" +
+                                  "                              >>> Parallelogramflächenberechnung<<<\n" +
+                                  "------------------------------------------------------------------------------------\n\n");
+                Console.WriteLine("Flächenberechnung von Parallelogramm");
+                Console.WriteLine("Geben Sie a ein");
+               
 
-            }
+                String a = Console.ReadLine();
 
-            static void Rechteck()
-            {
+                Console.WriteLine("Geben Sie h ein");
+                String h = Console.ReadLine();
 
-            }
+                bool tryparse = true;
 
-            static void Dreieck()
-            {
+                if (a == "exit")
+                    
+                    {
+                        Environment.Exit(0);
+                    }
 
-            }
+                    else if (a == "submenue")
+             
+                    {
+                        subexit = true;
+                    }
+                    else
+                    {
 
 
 
+                        try
+                        {
+                            d_a = Convert.ToDouble(a);
+                            d_h = Convert.ToDouble(h);
+
+                        }
+                        catch (Exception e)
+                        {
+                            Console.WriteLine("Fehleingabe");
+                            tryparse = false;
+                        }
+
+
+                        if (tryparse == true && d_a > 0)
+                        {
+                            Console.WriteLine("Die Fläche beträgt:{0,20:F2}m^2", d_a * d_h);
+                            Console.ReadKey();
+                        }
+                        else
+                        {
+                            Console.WriteLine("Fehleingabe");
+                            Console.ReadKey();
+                        }
+
+                        Console.Clear();
+
+
+
+                    }
+
+
+
+
+
+
+            } while (subexit == false);
         }
     }
 }
