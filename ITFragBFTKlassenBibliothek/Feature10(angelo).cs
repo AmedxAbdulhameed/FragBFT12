@@ -69,7 +69,7 @@ namespace ITFragBFTKlassenBibliothek
                     }
                 } while (!goOn);
 
-                Console.WriteLine(Newton_sqrt(input));
+                Console.WriteLine(Newton_cbrt(input));
                 Console.ReadLine();
                 Console.Clear();
             }
@@ -109,7 +109,7 @@ namespace ITFragBFTKlassenBibliothek
             }
             return input;
         }
-        internal static decimal Newton_cbrt(decimal input, int presizion = 10) // cube root
+        internal static decimal Newton_cbrt(decimal input, int presizion = 15) // cube root
         {
             decimal a = input;
             for (int i = 0; i < presizion; i++)
