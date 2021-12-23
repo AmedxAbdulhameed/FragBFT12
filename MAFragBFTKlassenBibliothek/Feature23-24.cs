@@ -169,16 +169,6 @@ namespace MAFragBFTKlassenBibliothek
         }
 
 
-        static void Rechteck()
-        {
-
-        }
-
-        static void Dreieck()
-        {
-
-        }
-
         static void Parallelogramm()
 
 
