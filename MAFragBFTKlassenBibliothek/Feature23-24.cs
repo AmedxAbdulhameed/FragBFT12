@@ -59,7 +59,7 @@ namespace MAFragBFTKlassenBibliothek
                         Console.Clear();
                         Kreis();
                         break;
-                        
+
 
                     case "2":
                         Console.Clear();
@@ -102,71 +102,203 @@ namespace MAFragBFTKlassenBibliothek
             } while (!Hmenue);
 
 
+        }
+
+
+        static void Kreis()
+        {
+
+        }
+        static void Parallelogramm()
+        {
+
+        }
+
+        #region Rechteck
+        static void Rechteck()
+        {
+
+            
 
 
 
-            static void Kreis()
+            bool subexit = false;
+
+            double d_a = 0;
+
+            double d_b = 0;
+
+
+
+            do
             {
 
-            }
-            static void Parallelogramm()
-            {
+                Console.WriteLine
 
-            }
+                    (FiggleFonts.Slant.Render("Frag Amed Abe"));
 
-            static void Rechteck()
-            {
+                Console.WriteLine("------------------------------------------------------------------------------------\n" +
 
-                bool subexit;
-                do
+                                    "                              >>> Rechteckflächenberechnung<<<\n" +
+
+                                    "------------------------------------------------------------------------------------\n\n");
+
+                Console.WriteLine("Eingabe: exit\t\t->\tbeendet das Programm");
+                Console.WriteLine("Eingabe: submenue\t->\tzurück zum Submenü");
+
+                Console.WriteLine("\nFlächenberechnung von Parallelogramm");
+
+                Console.WriteLine("Geben Sie a ein");
+
+
+
+
+
+                String a = Console.ReadLine();
+
+
+
+
+
+
+
+                bool tryparse = true;
+
+
+
+                if (a == "exit")
+
+
+
                 {
-                    Console.WriteLine("Ausgabe Flächenberechnung von Rechteck");
 
-                    subexit = false;
+                    Environment.Exit(0);
 
-                    Console.WriteLine("Geben Sie die seitenlänge a ein ");
+                }
+                else if (a == "submenue")
 
-                    string a = Console.ReadLine();
 
-                    if (a=="exit") 
+
+                {
+
+                    subexit = true;
+
+                }
+
+                else
+
+                {
+
+
+
+                    try
+
+                    {
+                        d_a = Convert.ToDouble(a);
+                    }
+
+                    catch (Exception e)
+                    {       
+                        Console.WriteLine("Fehleingabe");
+
+                        tryparse = false;
+
+                    }
+
+
+
+
+
+                    if (tryparse == false && d_a < 0)
+
+                    {
+
+                        Console.WriteLine("Fehleingabe");
+
+                        Console.ReadKey();
+
+                    }
+
+                }
+
+
+
+                if(subexit==false)
+                {
+                    Console.WriteLine("Geben Sie b ein");
+                    String b = Console.ReadLine();
+
+                    if (b == "exit")
                     {
                         Environment.Exit(0);
                     }
-                    else if (a=="submenue")
+                    else if (b == "submenue")
                     {
                         subexit = true;
-
                     }
-                    else if (a == "sonst")
+                    else
                     {
-                        
+
+
+
+                        try
+
+                        {
+                            d_b = Convert.ToDouble(b);
+                        }
+
+                        catch (Exception e)
+                        {
+                            Console.WriteLine("Fehleingabe");
+
+                            tryparse = false;
+
+                        }
+
+
+
+
+
+                        if (tryparse == false && d_b < 0)
+
+                        {
+
+                            Console.WriteLine("Fehleingabe");
+
+                            Console.ReadKey();
+
+                        }
+                        else
+                        {
+                            Console.WriteLine("Der Flächeninhalt hat den Wert {0}[m^2]",(d_a*d_b));
+                            Console.ReadKey();
+                        }
+
                     }
-                    
 
 
-
-                         
-
-                } while (subexit == false);
-
-            }    
-
-            static void Dreieck()
-            {
+                }
 
 
 
 
+                Console.Clear();
+            } while (subexit == false);
 
+        }
 
+        #endregion
 
-
-
-
-            }
+        static void Dreieck()
+        {
 
 
 
         }
-    }
+
+
+        
+
+    }    
 }
+    
