@@ -8,7 +8,7 @@ namespace FragBFTKlassenBibliothek
     {
         public static void HauptmenueAufruf()
         {
-            bool Exit = false;
+
 
             do
             {
@@ -54,7 +54,7 @@ namespace FragBFTKlassenBibliothek
                 {
                     case "e":
                         Console.Clear();
-                        //ETMultiToolKlassenBibliothek.ETMenue.ETSubMenue();
+                        ETFragBFTKlassenBibliothek.ETMenue.ETSubMenue();
                         break;
 
                     case "i":
