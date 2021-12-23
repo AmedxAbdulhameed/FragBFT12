@@ -101,24 +101,7 @@ namespace MAFragBFTKlassenBibliothek
 
 
         static void Wertetabelle()
-        {
-            double c = 0; // 0
-            double d; //B
-            double f; // B
-            double e;
-            double g;
-
-
-            Console.WriteLine("Nullstelle Berechnen\n");
-            Console.WriteLine("Geben sie m ein");
-            double m = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine("Geben sie b ein");
-            double b = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine("{0}x + {1} = {2} ", m, b, c);
-
-
-
-            d = b - b;
+        {            
 
 
             Console.WriteLine("Wertetabelle Ausgabe\n");
@@ -133,40 +116,14 @@ namespace MAFragBFTKlassenBibliothek
             string X = "x";
             string Y = "y";
 
-            Console.WriteLine("|{ 0,10},{ 1,10}|", X, Y);
-            for (int x_z = -5; x_z <= 5; x_z++)
-
-            {
-                Console.WriteLine("|{ 0,10}|{ 1,10}|", x_z, m * x_z + b);
-
-            }
-
-            Console.ReadKey();
 
 
-
-
-            f = c - b;
-
-            Console.WriteLine("{0}x = {1} ", m, f);
-
-            e = f / m;
-
-
-
-            g = m / m;
-
-            Console.WriteLine("{0}x = {1} ", g, e);
-
-
-
-
-
-            double sweite = 1;
-            double von = -10;
-            double bis = 10;
-
-
+            Console.WriteLine("Geben Sie den Startwert ein");
+            double von = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Geben Sie den Endwert ein");
+            double bis = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Geben Sie die Schrittweite ein");
+            double sweite = Convert.ToDouble(Console.ReadLine());
 
             Console.WriteLine("|{0,10}|{1,10}|", "x", "y");
             Console.WriteLine("----------------------|");
