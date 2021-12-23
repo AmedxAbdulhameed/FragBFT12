@@ -100,22 +100,44 @@ namespace PYFragBFTKlassenBibliothek
 
         static void Pyramide()
         {
+            Console.WriteLine("Geben Sie die Grundfläche der Pyramide in [m^2] an");
+            double g = Convert.ToDouble(Console.ReadLine());
 
-            Console.WriteLine("Pyramide");
-            //Meine erste Zeile
+            Console.WriteLine("Geben Sie die Höhe der Pyramide in [m] an");
+            double h = Convert.ToDouble(Console.ReadLine());
+
+            double v =g*h;
+
+
+            Console.WriteLine("Das Volumen der Pyramide beträgt:{0,10} [m^3]", v);
+
+            Console.ReadKey();
+            Console.Clear();
         }
 
         static void Kugel()
         {
+            Console.WriteLine("Geben Sie den Radius der Kugel in [m] an");
+            double r = Convert.ToDouble(Console.ReadLine());
 
+            double v = Math.PI * Math.Pow(r,3);
 
-
+            Console.WriteLine("Das Volumen der Kugel beträgt:{0,10} [m^3]", v);
+            Console.ReadKey();
+            Console.Clear();
 
         }
 
         static void Wuerfel()
         {
+            Console.WriteLine("Geben Sie den Radius des Würfels in [m] an");
+            double r = Convert.ToDouble(Console.ReadLine());
 
+            double v = r*r*r;
+
+            Console.WriteLine("Das Volumen des Würfels beträgt:{0,10} [m^3]", v);
+            Console.ReadKey();
+            Console.Clear();
 
 
         }
