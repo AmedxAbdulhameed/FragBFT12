@@ -69,7 +69,7 @@ namespace FragBFTKlassenBibliothek
 
                     case "p":
                         Console.Clear();
-                        //PHMultiToolKlassenBibliothek.PHMenue.PHSubMenue();
+                        PYFragBFTKlassenBibliothek.PyMenue.PYSubMenue();
                         break;
 
                     case "w":
