@@ -74,7 +74,7 @@ namespace FragBFTKlassenBibliothek
 
                     case "w":
                         Console.Clear();
-                        //WIMultiToolKlassenBibliothek.WIMenue.WISubMenue();
+                        WIFragBFTKlassenBibliothek.WIMenue.WISubMenue();
                         break;
 
                     case "exit":
