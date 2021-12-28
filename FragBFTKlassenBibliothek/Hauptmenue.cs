@@ -64,7 +64,7 @@ namespace FragBFTKlassenBibliothek
 
                     case "m":
                         Console.Clear();
-                        //MAMultiToolKlassenBibliothek.MAMenue.MASubMenue();
+                        MAFragBFTKlassenBibliothek.MAMenue.MASubMenue();
                         break;
 
                     case "p":

@@ -12,6 +12,7 @@
     <ProjectReference Include="..\ETFragBFTKlassenBibliothek\ETFragBFTKlassenBibliothek.csproj" />
     <ProjectReference Include="..\ITFragBFTKlassenBibliothek\ITFragBFTKlassenBibliothek.csproj" />
     <ProjectReference Include="..\KonsolenExtrasBibliothek\KonsolenExtrasBibliothek.csproj" />
+    <ProjectReference Include="..\MAFragBFTKlassenBibliothek\MAFragBFTKlassenBibliothek.csproj" />
     <ProjectReference Include="..\PYFragBFTKlassenBibliothek\PYFragBFTKlassenBibliothek.csproj" />
   </ItemGroup>
 

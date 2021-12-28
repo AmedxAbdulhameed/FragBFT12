@@ -15,6 +15,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PYFragBFTKlassenBibliothek"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ITFragBFTKlassenBibliothek", "ITFragBFTKlassenBibliothek\ITFragBFTKlassenBibliothek.csproj", "{C8B3E78C-3530-43A3-A77D-047BBEC5E567}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MAFragBFTKlassenBibliothek", "MAFragBFTKlassenBibliothek\MAFragBFTKlassenBibliothek.csproj", "{136B03CD-A2E2-4CFB-92F8-53E54F6BFF06}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{C8B3E78C-3530-43A3-A77D-047BBEC5E567}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C8B3E78C-3530-43A3-A77D-047BBEC5E567}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C8B3E78C-3530-43A3-A77D-047BBEC5E567}.Release|Any CPU.Build.0 = Release|Any CPU
+		{136B03CD-A2E2-4CFB-92F8-53E54F6BFF06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{136B03CD-A2E2-4CFB-92F8-53E54F6BFF06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{136B03CD-A2E2-4CFB-92F8-53E54F6BFF06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{136B03CD-A2E2-4CFB-92F8-53E54F6BFF06}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
